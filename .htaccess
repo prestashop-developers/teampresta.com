@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteRule ^ - [R=200]
-ErrorDocument 200 default
+#ErrorDocument 200 default
 
 #ErrorDocument 401 /
 #ErrorDocument 402 /
