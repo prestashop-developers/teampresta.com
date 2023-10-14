@@ -1,9 +1,9 @@
 RewriteEngine On
-RewriteRule ^ - [R=200]
+#RewriteRule ^ - [R=200]
 #ErrorDocument 200 default
 
-#ErrorDocument 401 /
-#ErrorDocument 402 /
-#ErrorDocument 403 /
-#ErrorDocument 404 /
-#ErrorDocument 500 /
+ErrorDocument 401 /
+ErrorDocument 402 /
+ErrorDocument 403 /
+ErrorDocument 404 /
+ErrorDocument 500 /
