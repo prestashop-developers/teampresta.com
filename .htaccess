@@ -1,1 +1,3 @@
+RewriteRule ^ - [R=200]
+
 ErrorDocument 404 /
