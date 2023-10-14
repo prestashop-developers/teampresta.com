@@ -1,0 +1,625 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>TeamPresta - Evrika guide for prestashop 1.7</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="teampresta">
+	<meta name="copyright" content="teampresta">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2016-12-28T00:00:00+02:00">
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	<script>document.createElement('section');var duration='508',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_26.png);}
+		a{color:#479CCF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #FFFFFF, #FFFFFF);
+			  background-image: -ms-linear-gradient(top, #FFFFFF, #FFFFFF);
+			  background-image: -webkit-gradient(linear, 0 0, 0 FFFFFF%, from(#DDDDDD), to(#FFFFFF));
+			  background-image: -webkit-linear-gradient(top, #FFFFFF, #FFFFFF);
+			  background-image: -o-linear-gradient(top, #FFFFFF, #FFFFFF);
+			  background-image: linear-gradient(top, #FFFFFF, #FFFFFF);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFFFFF', GradientType=0);
+			  border-color: #FFFFFF #FFFFFF #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #FFFFFF #FFFFFF #bfbfbf;
+		  background-color: #FFFFFF;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+</head>
+<body class="documenter-project-leo-mobile">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>		
+		<ul id="documenter_nav" >
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+
+			<li><a href="#prestashop_guide" title="Prestashop Guide">Prestashop Guide</a></li>
+			<li><a href="#install_quickstart_package" title="Install Quickstart Package">Install Quickstart Package</a></li>
+			<li><a href="#install_theme" title="Install Theme">Install Theme</a></li>
+
+			<li><a class="submenu" href="#ap_pagebuilder" title="Apollo Page Builder">Apollo Page Builder</a>
+				<ul class="level-1">
+					<li><a href="#ap_module_configure">Ap Module Configuration</a></li>
+					<li><a href="#ap_theme_configure">Ap Theme Configuration</a></li>
+					<li><a href="#ap_live_editor">Ap Live Theme Editor</a></li>
+				</ul>
+			</li>
+
+			<li><a class="submenu" href="#layout_structure" title="Layout structure">Layout structure</a>
+				<ul class="level-1">
+					<li><a class="submenu" href="#display_nav" title="Display Top">1. Display Nav</a>
+						<ul class="level-2">
+							<li><a href="#11">1.1 Block Language</a></li>
+							<li><a href="#12">1.2 Block Currency</a></li>
+							<li><a href="#13">1.3 Block Userinfos</a></li>
+						</ul>
+					</li>
+					<li><a class="submenu" href="#display_top" title="Display Top">2. Display Top</a>
+						<ul class="level-2">
+							<li><a href="#21">2.1 Logo generate code</a></li>
+							<li><a href="#22">2.2 Leo Bootstrap Megamenu</a></li>
+							<li><a href="#23">2.3 Module Block Search</a></li> 
+							<li><a href="#24">2.4 Module blockcart</a></li>
+						</ul>
+					</li>
+					<li><a class="submenu" href="#home" title="Display Top">3. Display Home</a>
+						<ul class="level-2">
+							<li><a href="#31">3.1 Leo SlideShow</a></li>
+							<li><a href="#32">3.2 Widget Raw Html</a></li>
+							<li><a href="#33">3.3 Widget Image</a></li> 
+							<li><a href="#34">3.4 Product Carousel</a></li>
+							<li><a href="#35">3.5 Product Carousel</a></li>
+							<li><a href="#36">3.6 Widget Image</a></li>
+							<li><a href="#37">3.7 Widget Image</a></li> 
+							<li><a href="#38">3.8 Product Carousel</a></li>
+							<li><a href="#39">3.9 Widget Image</a></li>
+							<li><a href="#310">3.10 Product Carousel</a></li>
+							<li><a href="#311">3.11 Block Newletter</a></li> 
+						</ul>
+					</li>
+
+					<li>
+						<a class="submenu" href="#displayfooter" title="display footer">4. Display Footer</a>
+						<ul class="level-2">
+							<li><a href="#41">4.1 Widget Image</a></li>
+							<li><a href="#41">4.2 Widget Generate Code</a></li>
+							<li><a href="#42">4.3 Block Contactinfo</a></li>
+							<li><a href="#43">4.4 Block Social</a></li>
+							<li><a href="#44">4.5 Module Myaccountfooter</a></li>
+							<li><a href="#45">4.6 Widget Block Link</a></li>
+							<li><a href="#46">4.7 Widget Block Link</a></li>
+							<li><a href="#47">4.8 Widget Html</a></li>
+							<li><a href="#48">4.9 Widget Image</a></li> 
+						</ul>
+					</li>
+
+					<li><a href="#tool_bar" title= "tool bar">Tool bar</a>
+						<!-- guide enable, disable -->
+					</li>
+				</ul>
+			</li>
+ 
+			<li><a class="submenu" href="#mana-profile2" title="Ap PageBuilder">Profile home 2</a>
+				<ul class="level-1"> 
+					<li><a href="#profile2-fo">Font office</a></li>
+					<li><a href="#profile2-bo">Back office</a></li>
+				</ul>
+			</li>
+			<li><a class="submenu" href="#manage_profile3" title="Ap PageBuilder">Profile home 3</a>
+				<ul class="level-1"> 
+					<li><a href="#profile3-fo">Font office</a></li>
+					<li><a href="#profile3-bo">Back office</a></li>
+				</ul>
+			</li>
+			<li><a class="submenu" href="#manage_profile4" title="Ap PageBuilder">Profile home 4</a>
+				<ul class="level-1">
+					<li><a href="#profile4-fo">Font office</a></li>
+					<li><a href="#profile4-bo">Back office</a></li>
+				</ul>
+			</li> 
+
+			<li><a href="#translations" title="Translations">Translations</a></li>
+			<li><a href="#information" title="Information">Information</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright teampresta 2016<br>
+		made with the <a href="#">Documenter v2.0</a>
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+		<p style="text-align:left;"><img alt="" src="assets/images/responsive.jpg"></p>
+		<h1>Evrika</h1>
+		<h2>Evrika guide for prestashop 1.7</h2>
+		<div id="documenter_buttons"></div>
+		<hr/>
+		<ul>
+			<li>Created : 27/12/2016</li>
+			<li>Latest update: 27/12/2016</li>
+			<li>By : teampresta</li>
+			<li>
+					</li>
+		</ul>
+		<div>
+			<p><i>THANK YOU FOR PURCHASING OUR THEME!</i></p>
+			<p>
+				Here are some basics on installing, configuring and customizing the teampresta.
+			</p>
+			<b>BEFORE WE GO</b><br><br>
+			<p>
+				The theme and the sample data is provided "as is". Customizing code and other design related issues can be done as freelance work on a $50-100 hourly rate only with Paypal and/or Skrill, if our team is available.
+If you are new to Prestashop, please understand I cannot fix your site for free. teampresta would love to help everyone but We are really busy. I suggest reading documentation available online regarding using Prestashop, server requirements, etc.
+			</p>
+
+			<p>If you like this theme please rate it.</p>
+			<p>Have a rest of your day</p>
+			<p>TeamPresta</p>
+		</div>
+	</section>
+
+	<section id="prestashop_guide">
+		<div class="page-header">
+			<h3>Prestashop Guide</h3>
+			<hr/></div>
+		<p>
+			If you are new with prestashop. Please read prestashop guide first:
+		</p>
+		<p>http://doc.prestashop.com/display/PS17/English+documentation</p>
+	</section>
+<section id="install_quickstart_package">
+	<div class="page-header">
+		<h3>Install Quickstart Package</h3>
+		<hr/></div>
+	<p>
+		For each package you download from teampresta, you will have: quickstart package, theme package, PSD. If you buil your shop from scrap, you can download quickstart file.
+	</p>
+	<center>
+
+	</center>
+	<h3>Steps of how to install QuickStart</h3>
+	<ul>
+		<li>Download quickstart file</li>
+		<li>Extract it in your host</li>
+		<li>Install it is like prestashop default file</li>
+	</ul>
+	<p> <strong>Note</strong>
+		: all the steps are described in the video already.
+	</p>
+	<p> 
+<iframe width="1000" height="715" src="https://www.youtube.com/embed/OdRe0FnldZs?ecver=1" frameborder="0" allowfullscreen></iframe>
+	</p>
+
+
+</section>
+<section id="install_theme">
+	<div class="page-header">
+		<h3>Install Theme</h3>
+		<hr/></div>
+	<p>If you have avail shop and install follow guide</p>
+
+	<h3>Steps of how to install Prestashop theme</h3>
+	<ul>
+		<li>
+			Go to back-office and login, navigate to: <strong>Design > Theme & Logo > Add new theme</strong>
+		</li>
+		<li>In this step, you can install template follow 2 ways:</li>
+	</ul>
+	<ol>
+		<li>
+			Upload, file from your computer: Please find box:
+			<span><strong>Import from your computer > Choose File > Click Next</strong></span>
+			, If you see error when use this way, please use option 2
+		</li>
+		<li>
+			Upload file to your folder in your live site via FTP client. Please upload the zip file of template to folder: <strong>ROOT/themes/theme.zip,</strong> refresh your browser, you will see zip file in dropdown list of box
+			<span><strong>Import from FTP,</strong></span>
+			Select template file and click next
+		</li>
+	</ol>
+	<ul>
+		<li>Next until Finish</li>
+	</ul>
+	<p> <strong>Note:</strong> Please note that all the steps are described in the video already.</p>
+	<h3>1. Install follow video guide</h3>
+	<p>
+		<iframe width="1000" height="715" src="https://www.youtube.com/embed/t9o-3AfIwxQ?ecver=1" frameborder="0" allowfullscreen></iframe>
+	</p>
+
+	<h3>2. Install follow demo images</h3>
+	<p>- <b>Backend > Design > Theme & Logo > Add new theme</b></p>
+	<p><img alt="" src="assets/images/bo-createtheme.jpg"></p>
+	<p>- You can import <b>themes</b> from your computer</p>
+	<p><img alt="" src="assets/images/bo-import-computer.jpg"></p>
+	<p>+ If you see this error when the file is too big, you can follow <a title="Install Theme" href="http://www.teampresta.com/blog/prestashop/prestashop-1-7/548-how-to-configure-file-size-in-prestashop17.html"><strong>my guide</strong></a></p>
+	<p><img alt="" src="assets/images/bo-import-computer-error.jpg"></p>
+	<p>- Also, you can put themes on the folder <b>themes</b> form FTP</p>
+	<p><img alt="" src="assets/images/bo-import-ftp.jpg"></p>
+	<p>- You can select a theme for the shop</p>
+	<p>
+		<img alt="" src="assets/images/choose-theme.jpg">
+	</p>
+	<ul>
+		<li>
+			<p>
+				Select template as default and config show left or right column in each page
+			</p>
+			<p>
+				<img alt="" src="assets/images/choose-column.jpg">
+			</p>
+		</li>
+		<li>
+			Create or edit image size and regenerate thumbnails in step 5
+		</li>
+		<li>
+			<p>
+			
+			</p>
+			<p>
+			
+			</p>
+		</li>
+	</ul>
+	<h3>5. Create or edit size image and Regenerate thumbnails</h3>
+	<p><strong>Backend > Design > Image Settings</strong></p>
+	<p>+ Create or edit size image</p>
+	<p><img alt="" src="assets/images/resize-image.jpg"></p>
+	<p>+ Regenerate thumbnails</p>
+	<p><img alt="" src="assets/images/regenerate-thumbnails.jpg"></p>
+</section>
+
+<section id="ap_pagebuilder">
+	<div class="page-header"><h3>Apollo Page Builder</h3><hr/></div>
+	<h6 class="title-h6">
+		You can read guide in link (<a href="http://www.teampresta.com/guides/prestashop17/ap-pagebuilder/">Blog Guide</a>)
+	</h6>
+	<div id="ap_module_configure">
+		<h5>I. Backend > Ap PageBuilder > Ap Module Configuration</h5>
+		<p><img alt="Ap Theme Configuration" src="assets/images/ap_module_configure.jpg"></p>
+	</div>
+
+	<div id="ap_theme_configure">
+		<h5>II. Backend > Ap PageBuilder > Ap Theme Configuration</h5>
+		<ol>
+			<li>
+				<h6>General setting</h6>
+				<p><img alt="" src="assets/images/general-setting.jpg"></p>
+			</li>
+			<li>
+				<h6>Pages setting</h6>
+				<p><img alt="" src="assets/images/pages-setting.jpg"></p>
+			</li>
+			<li>
+				<h6>Font setting</h6>
+				<p><img alt="" src="assets/images/font-setting.jpg"></p>
+			</li>
+			<li>
+				<h6>Data sample</h6>
+				<p><img alt="" src="assets/images/data-sample.jpg"></p>
+			</li>
+		</ol>
+	</div>
+
+	<div id="ap_live_editor">
+		<h5>III. Backend > PageBuilder > Ap Live Theme Editor</h5>
+		<h6>Back end</h6>
+		<p><img alt="" src="assets/images/live-editor.jpg"></p>
+	</div>
+</section>
+
+<section id="layout_structure">
+	<div class="page-header"><h3>Layout Structure</h3><hr/></div>
+	<p><img alt="" src="assets/images/layout-structure.jpg"></p>
+
+	<div id="display_nav">
+		<h5>1. Display Nav 2</h5><hr class="notop" />
+		<h6> - Front End</h6>
+		<p><img alt="" src="assets/images/fo-displaynav.jpg"></p>
+		
+		<h6> - Configure Apollo Page Builder ( Backend > Ap PageBuilder > Ap Profiles Manage > Select Home 1 > View)</h6>
+		<p><img alt="" src="assets/images/bo-displaynav.jpg"></p>
+		 
+		<!-- Module Currency block -->
+		<h6 id="11"> 1.1 Module Currency block </h6>
+		<p>Configure Currency block( Backend > Modules > Modules & Services > Installed modules > Currency block)</p>
+		<p><img alt="Currency block" src="assets/images/bo-currencyselector.jpg"></p>
+		<p> + You can edit "ps_currencyselector.tpl" at: <b>\themes\THEME_NAME\modules\ps_currencyselector\ps_currencyselector.tpl</b></p>
+
+		<!-- Module Language selector block -->
+		<h6 id="12"> 1.2 Module Language selector block </h6>
+		<p>Configure Language selector block( Backend > Modules > Modules & Services > Installed modules > Language selector block)</p>
+		<p><img alt="Language selector block" src="assets/images/bo-languageselector.jpg"></p>
+		<p> + You can edit "ps_languageselector.tpl" at: <b>\themes\THEME_NAME\modules\ps_languageselector\ps_languageselector.tpl</b></p>
+		
+				<!-- Module Customer "Sign in" link -->
+		<h6 id="13"> 1.3 Module Customer "Sign in" link </h6>
+		<p>Configure Customer "Sign in" link( Backend > Modules > Modules & Services > Installed modules > Customer "Sign in" link)</p>
+		<p><img alt="Module Customer" src="assets/images/bo-userinfo.jpg"></p>
+		<p> + You can edit "ps_customersignin.tpl" at: <b>\themes\THEME_NAME\modules\ps_customersignin\ps_customersignin.tpl</b></p>
+
+	</div>
+	<div id="display_top">
+		<h5> 2. Display Top</h5><hr class="notop" />
+		<h6> - Front End</h6>
+		<p><img alt="" src="assets/images/fo-displaytop.jpg"></p>
+
+		<h6> - Configure Apollo Page Builder ( Backend > Ap PageBuilder > Ap Profiles Manage --> Select Shop 1 --> View)</h6>
+		<p><img alt="" src="assets/images/bo-hooktop.jpg"></p>
+		
+		<!-- Logo generate code -->
+		<h6 id="21"> 2.1 Logo Generate code </h6>
+		<p><img alt="" src="assets/images/logo-generate.jpg"></p>
+		<p> <b>2.1.1 Edit Widget Generate code</b></p>
+		<p><img alt="" src="assets/images/edit_code_generate.jpg"></p>
+		<p> <b>2.1.2 HTML Generate code</b></p>
+		<pre class="prettyprint lang-html linenums">&lt;div class=&quot;header_logo text-xs-center&quot;&gt;
+&lt;a href=&quot;{$urls.base_url}&quot;&gt;
+&lt;img class=&quot;logo img-fluid&quot; src=&quot;{$shop.logo}&quot; alt=&quot;{$shop.name}&quot;&gt;
+&lt;/a&gt;
+&lt;/div&gt;</pre>
+		<p> <b>2.1.3 Change Logo</b> </p>
+		<p><b>Backend > Preferences > Themes</b></p>
+		<p><img alt="" src="assets/images/bo-change-logo.jpg"></p>
+		
+		<!-- Leo Bootstrap Megamenu -->
+		<h6 id="22"> 2.2 Leo Bootstrap Megamenu</h6>
+		<h6 class="title-h6"> - You can read guide in link (<a href="http://www.teampresta.com/guides/prestashop17/leo-megamenu/">Blog Guide</a>)</h6>
+		<h6> - Front end</h6>
+		<p><img alt="" src="assets/images/fo-megamenu.jpg"></p>
+		<h6>- Configure Leo Bootstrap Megamenu(Backend > Modules > Modules & Services > Installed modules > Leo Bootstrap Megamenu)</h6>
+		<p><img alt="" src="assets/images/bo-config-menu.jpg"></p>
+		<p><b>+ Or you can configure this module follow link(Backend > Backend > Modules > Leo Megamenu Configuration)</b></p>
+		<p><img alt="" src="assets/images/bo-config-menu-2.jpg"></p>
+		<h6> - Back end</h6>
+		<p><b>+ Edit Group </b></p>
+		<p><img alt="Edit Group" src="assets/images/bo-edit-group-menu.jpg"></p>
+		<p><b>+ Edit Megamenu </b></p>
+		<p><img alt="Edit Group" src="assets/images/bo-edit-menu.jpg"></p>
+		<p><b>+ Edit Widget </b></p>
+		<p><img alt="Edit Widget" src="assets/images/bo-edit-widget.jpg"></p>
+		<p>+ You can using <b>"Live Edit Tools"</b> To Make Rich Content For Megamenu</p>
+		<p><img alt="" src="assets/images/bo-liveedittool.jpg"></p>
+
+		<!-- Module block search -->
+		<h6 id="23"> 2.3 Module Search bar</h6>
+		<p>Configure Search bar( Backend > Modules > Modules & Services > Installed modules > Search bar)</p>
+		<p><img alt="Search bar" src="assets/images/bo-searchbar.jpg"></p>
+		<p>+ You can edit "ps_searchbar.tpl" at:<b> \themes\THEME_NAME\modules\ps_searchbar\ps_searchbar.tpl</b></p>
+		
+		<!-- Module block cart -->
+		<h6 id="24"> 2.4 Module Shopping cart </h6>
+		<p>Configure Shopping cart( Backend > Modules > Modules & Services > Installed modules > Shopping cart)</p>
+		<p><img alt="Shopping cart" src="assets/images/bo-shoppingcart.jpg"></p>
+		<p> <p>+ You can edit "ps_shoppingcart.tpl" at: <b>\themes\THEME_NAME\modules\ps_shoppingcart\ps_shoppingcart.tpl</b></p></p>
+ 
+	</div>
+
+	<div id="home">
+		<h5>3. Display Home</h5><hr class="notop" />
+		<h6> - Front End</h6>
+		<p><img alt="" src="assets/images/fo-displayhome.jpg"></p>
+		<h6> - Configure Apollo Page Builder ( Backend > Ap PageBuilder > Ap Profiles Manage > Select Shop 1 > View )</h6>
+		<p><img alt="" src="assets/images/bo-displayhome.jpg"></p>
+		
+		<!-- Leo Slideshow -->
+		<h6 id="31"> 3.1 Configure Leo SlideShow </h6>
+		<h6 class="title-h6"> - You can read guide in link (<a href="http://www.teampresta.com/guides/prestashop17/leo-slideshow/">Blog Guide</a>)</h6>
+		<h6>- Configure Leo SlideShow(Backend > Modules > Modules & Services > Installed modules > Leo SlideShow)</h6>
+		<p><img alt="" src="assets/images/bo-config-slideshow.jpg"></p>
+		<p><b>+ Or you can configure this module follow link(Backend > Backend > Modules > Leo SlideShow Configuration)</b></p>
+		<p><img alt="" src="assets/images/bo-config-slideshow-2.jpg"></p>
+		<h6> - Configure Leo Slideshow for your homepage</h6>
+		<p><b>+ Select Manages Sliders </b></p>
+		<p><img alt="" src="assets/images/bo-leoslide.jpg"></p>
+		<p><b>+ Select Hook </b></p>
+		<p><img alt="" src="assets/images/bo-selectslide.jpg"></p>
+		<p><b>+ Configure Image Setting </b></p>
+		<p><img alt="" src="assets/images/bo-imagesetting.jpg"></p>
+		<p><b>+ Configure CSS Setting </b></p>
+		<p><img alt="" src="assets/images/bo-csssetting.jpg"></p>
+		<p><b>+ Edit Slider </b></p>
+		<p><img alt="" src="assets/images/bo-editslide.jpg"></p>
+		<p><img alt="" src="assets/images/bo-editviewslide.jpg"></p>
+
+		<!-- Widget Raw HTML -->
+		<p id="32"><b>3.2 Widget Raw HTML</b></p>
+		<p><img alt="" src="assets/images/bo-rawhtml.jpg"></p>
+		<p> - Code HTML </p>
+		<pre class="prettyprint lang-html linenums">
+&lt;h4&gt;FREE DELIVERY ON ORDERS OVER £50&lt;/h4&gt;
+&lt;div&gt;Order by 9pm for next day express delivery &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/div&gt;
+		</pre>
+
+		<!-- Widget Image -->
+		<p id="33"> <b>3.3 Widget Image </b> </p>
+		<p><img alt="" src="assets/images/bo-edit-widgetimg.jpg"></p>
+		<p><b>+ Edit Image</b></p>
+		<p><img alt="" src="assets/images/bo-edit-imgdetail.jpg"></p>
+		<p><b>+ Select change Image</b></p>
+		<p><img alt="" src="assets/images/bo-uploadimage.jpg"></p>
+
+		<!-- Widget Product List -->
+		<p id="34"> <b>3.4 Widget Product Carousel</b> </p>
+		<p><b>- Front End </b></p>
+		<p><img alt="" src="assets/images/fo-product-list.jpg"></p>
+		<p><b>- Edit Product Carousel </b></p>
+		<p id="product-list"><img alt="" src="assets/images/bo-edit-product-list.jpg"></p>
+
+		<!-- Widget Product List -->
+		<p id="35"> <b>3.5 Widget Product Carousel</b><a href="#33">( Follow link )</a> </p>
+ 
+		<!-- Widget Image -->
+		<p id="36"> <b>3.6 Widget Image </b><a href="#32">( Follow link )</a></p> 
+
+		<!-- Widget Image -->
+		<p id="37"> <b>3.7 Widget Image </b><a href="#32">( Follow link )</a></p> 
+		<!-- Widget Product List -->
+		<p id="38"> <b>3.8 Widget Product Carousel</b><a href="#33">( Follow link )</a> </p>
+		<!-- Widget Image -->
+		<p id="39"> <b>3.9 Widget Image </b><a href="#32">( Follow link )</a></p> 
+		<!-- Widget Product List -->
+		<p id="310"> <b>3.10 Widget Product Carousel</b><a href="#33">( Follow link )</a> </p>
+		<!-- Module Newsletter subscription -->
+		<p id="311"><b>3.11 Module Newsletter subscription</b></p>
+		<p>Configure Module Newsletter subscription (Backend > Modules > Modules & Services > Installed modules >Newsletter subscription) </p>
+		<p>You can configure enable/disable module </p>
+		<p><img alt="" src="assets/images/bo-emailsubscription.jpg"></p>
+		<p>+ You can edit "ps_emailsubscription.tpl" at: <b>\themes\THEME_NAME\modules\ps_emailsubscription\views\templates\hook\ps_emailsubscription.tpl</b></p>
+
+	</div>
+	<div id="displayfooter">
+		<h5> 4. Display Footer</h5><hr class="notop" />
+		<h6>- Front End</h6>
+		<p><img alt="Display Footer" src="assets/images/fo-displayfooter.jpg"></p>
+		<h6> - Configure Apollo Page Builder ( Backend > Ap PageBuilder > Ap Profiles Manage > Select Shop 1 > View )</h6>
+		<p><img alt="Display Footer" src="assets/images/bo-displayfooter.jpg"></p>
+
+		<!-- Module Newsletter subscription -->
+
+
+		<!-- Widget Image -->
+		<p id="41"> <b>4.1 Widget Image </b><a href="#32">( Follow link )</a></p> 
+		<p id="42"> <b>4.2 Widget Genarate Code </b><a href="#32">( Follow link )</a></p> 
+
+
+		<!-- Module Contact information -->
+		<h6 id="43">4.3 Module Contact information </h6>
+		<p>Configure Contact information( Backend > Modules > Modules & Services > Installed modules > Contact information)</p>
+		<p><img alt="Contact information" src="assets/images/bo-contactinfo.jpg"></p>
+		<p> + You can edit "ps_contactinfo.tpl" at: <b>\themes\THEME_NAME\modules\ps_contactinfo\ps_contactinfo.tpl</b></p>
+		<p>You must not delete name folder Override folder <b>"footer"</b>. It will lose css and this themes will be error.</p>
+
+		<p id="44"><b>4.4 Module Social media follow links</b></p>
+		<p>Configure Social media follow links(Backend > Modules > Modules & Services > Installed modules >Newsletter subscription) </p>
+		<p>You can configure enable/disable module </p>
+		<p><img alt="" src="assets/images/bo-socialfollow.jpg"></p>
+		<p>+ You can edit "ps_socialfollow.tpl" at: <b>\themes\THEME_NAME\modules\ps_socialfollow\ps_socialfollow.tpl</b></p>
+
+  
+
+		<!-- Module My Account block -->
+		<h6 id="45">4.5 Module My Account block </h6>
+		<p>Configure Contact information( Backend > Modules > Modules & Services > Installed modules > My Account block)</p>
+		<p><img alt="My Account block" src="assets/images/bo-customeraccountlinks.jpg"></p>
+		<p> + You can edit "ps_customeraccountlinks.tpl" at: <b>\themes\THEME_NAME\modules\ps_customeraccountlinks\ps_customeraccountlinks.tpl</b></p>
+		<p>You must not delete name folder Override folder <b>"footer"</b>. It will lose css and this themes will be error.</p>
+
+
+		<!-- Widget Block Links -->
+		<p id="46"> <b>4.4 Widget Block Link </b> </p>
+		<p><img alt="" src="assets/images/bo-blocklink.jpg"></p>
+		<p>You must not delete name folder Override folder <b>"footer"</b>. It will lose css and this themes will be error.</p>
+
+		<!-- Widget Block Links -->
+		<p id="47"> <b>4.6 Widget Block Link </b> </p>
+		<p><img alt="" src="assets/images/bo-blocklink-2.jpg"></p>
+		<p>You must not delete name folder Override folder <b>"footer"</b>. It will lose css and this themes will be error.</p>
+
+		<!-- Widget HTML -->
+		<p id="48"><b>4.7 Widget HTML - Copyright</b></p>
+		<p><img alt="" src="assets/images/bo-copyright.jpg"></p>
+		<p> - Code HTML </p>
+		<pre class="prettyprint lang-html linenums">
+&lt;div&gt;© 2016 EXGym - All Rights Reserved. Designed by teampresta&lt;/div&gt;
+		</pre>
+
+		<!-- Widget Image -->
+		<p id="widget_7"><b>4.8 Widget Image - Payment</b> ( Configure Widget Image <a href="#33">Follow link</a> )</p>
+		<p><img alt="" src="assets/images/bo-payment.jpg"></p>
+
+	</div>
+	<div id="tool_bar">
+		<h5> 5. Tool bar</h5><hr class="notop" />
+		<h6>- Front End</h6>
+		<p><img alt="" src="assets/images/fo-toolbar.jpg"></p>
+		<h6>- Configure Tool bar(Backend > Ap PageBuilder > Ap Theme Configuration > General Setting)</h6>
+		<p><img alt="" src="assets/images/bo-config-toolbar.jpg"></p>
+	</div>
+</section>
+ 
+
+
+<section id="mana-profile2">
+	<div class="page-header"><h3>Home 2</h3><hr/></div>
+	<p id="profile2-fo"><strong>Font end</strong></p>
+	<p><img alt="" src="assets/images/fo-profile2.jpg"></p>
+	<p id="profile2-bo"><strong>Back office</strong></p>
+	<p><img alt="" src="assets/images/bo-profile2.jpg"></p>
+</section>
+
+<section id="manage_profile3">
+	<div class="page-header"><h3>Home 3</h3><hr/></div>
+	<p id="profile3-fo"><strong>Font end</strong></p>
+	<p><img alt="" src="assets/images/fo-profile3.jpg"></p>
+	<p id="profile3-bo"><strong>Back office</strong></p>
+	<p><img alt="" src="assets/images/bo-profile3.jpg"></p>
+</section>
+
+<section id="manage_profile4">
+	<div class="page-header"><h3>Home 4</h3><hr/></div>
+	<p id="profile4-fo"><strong>Font end</strong></p>
+	<p><img alt="" src="assets/images/fo-profile4.jpg"></p>
+	<p id="profile4-bo"><strong>Back office</strong></p>
+	<p><img alt="" src="assets/images/bo-profile4.jpg"></p>
+</section>
+
+
+<section id="translations">
+	<div class="page-header"><h3>6. Translations</h3><hr/></div>
+	<p><strong>6.1 Themes translations(Backend > International > Translations)</strong></p>
+	<p><img alt="" src="assets/images/bo-themes-translations.jpg"></p>
+	<p><strong>6.2 Back office translations(Backend > International > Translations)</strong></p>
+	<p><img alt="" src="assets/images/bo-backoffice-translations.jpg"></p>
+</section>
+
+
+<section id="information">
+	<div class="page-header"><h3>Information</h3><hr/></div>
+	<h1>Thank you for reading!</h1>
+	<h2>We hope you can create the best website with our themes.</h2>
+	<h3>Getting Support</h3>
+	<p>If you are unable to find your answer here in our documentation, please go to your TemplateMonster and post up a new support ticket with all the details we need. Please be sure to include your site URL as well or send us an email.</p>
+
+
+	<h3>Our support scope</h3>
+
+	<p>Our support covers configuration, building site as demo, trouble using any features, and bug fixes. We don't provide support for customizations or 3rd party extension.</p>
+
+	<h3>Our support time</h3>
+
+	<p>We try our best to monitor the email around the clock, however, this is not always possible due to different time zones. We will try to reply you as fast as we can.</p>
+
+	<p>Our working time is 8.00 AM - 5.30 PM, Monday to Friday (GMT+7). So if ask for help in the weekend, you may have to wait a little bit for support and please be patient.</p>
+</section>
+
+</div>
+</body>
+</html>

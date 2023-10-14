@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart - TeamPresta</title>
+
+    <!-- Styling -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,700" rel="stylesheet">
+<link href="/support/templates/six/css/all.min.css?v=21efa2" rel="stylesheet">
+<link href="/support/templates/six/css/custom.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    var csrfToken = '65af1b2077faf0000e3062d298fddd989a728c55',
+        markdownGuide = 'Markdown Guide',
+        locale = 'en',
+        saved = 'saved',
+        saving = 'autosaving',
+        whmcsBaseUrl = "/support",
+        recaptchaSiteKey = "";
+</script>
+<script src="/support/templates/six/js/scripts.min.js?v=21efa2"></script>
+
+
+    
+
+
+
+
+
+<link rel='stylesheet' id='my-theme'  href='http://teampresta.com/wp-content/themes/seofy/css/main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='my-theme'  href='http://teampresta.com/support/templates/six/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='my-theme'  href='https://teampresta.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.6' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://teampresta.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.6' type='text/css' media='all' />
+
+
+
+<link rel='stylesheet' id='seofy-default-style-css'  href='https://teampresta.com/wp-content/themes/seofy/style.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='flaticon-css'  href='https://teampresta.com/wp-content/themes/seofy/fonts/flaticon/flaticon.css?ver=5.0.3' type='text/css' media='all' />
+
+</head>
+<body data-phone-cc-input="1">
+
+
+
+<section id="header">
+    <div class="container">
+        <ul class="top-nav">
+                            <li>
+                    <a href="#" class="choose-language" data-toggle="popover" id="languageChooser">
+                        English
+                        <b class="caret"></b>
+                    </a>
+                    <div id="languageChooserContent" class="hidden">
+                        <ul>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=arabic">العربية</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=azerbaijani">Azerbaijani</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=catalan">Català</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=chinese">中文</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=croatian">Hrvatski</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=czech">Čeština</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=danish">Dansk</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=dutch">Nederlands</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=english">English</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=estonian">Estonian</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=farsi">Persian</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=french">Français</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=german">Deutsch</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=hebrew">עברית</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=hungarian">Magyar</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=italian">Italiano</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=macedonian">Macedonian</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=norwegian">Norwegian</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=portuguese-br">Português</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=portuguese-pt">Português</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=romanian">Română</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=russian">Русский</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=spanish">Español</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=swedish">Svenska</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=turkish">Türkçe</a>
+                                </li>
+                                                            <li>
+                                    <a href="/support/cart.php?a=add&amp;pid=3&amp;language=ukranian">Українська</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </li>
+                                        <li>
+                    <a href="/support/clientarea.php">Login</a>
+                </li>
+                                    <li>
+                        <a href="/support/register.php">Register</a>
+                    </li>
+                                <li class="primary-action">
+                    <a href="/support/cart.php?a=view" class="btn">
+                        View Cart
+                    </a>
+                </li>
+                                </ul>
+
+                    <a href="/support/index.php" class="logo"><img src="/support/assets/img/logo.png" alt="TeamPresta"></a>
+        
+    </div>
+</section>
+
+<section id="main-menu">
+
+    <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="primary-nav">
+
+                <ul class="nav navbar-nav">
+
+                        <li menuItemName="Home" class="" id="Primary_Navbar-Home">
+        <a href="/support/index.php">
+                        Home
+                                </a>
+            </li>
+    <li menuItemName="Store" class="dropdown" id="Primary_Navbar-Store">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Store
+                        &nbsp;<b class="caret"></b>        </a>
+                    <ul class="dropdown-menu">
+                            <li menuItemName="Browse Products Services" id="Primary_Navbar-Store-Browse_Products_Services">
+                    <a href="/support/cart.php">
+                                                Browse All
+                                            </a>
+                </li>
+                            <li menuItemName="Shop Divider 1" class="nav-divider" id="Primary_Navbar-Store-Shop_Divider_1">
+                    <a href="">
+                                                -----
+                                            </a>
+                </li>
+                            <li menuItemName="Shared Hostin" id="Primary_Navbar-Store-Shared_Hostin">
+                    <a href="/support/cart.php?gid=1">
+                                                Shared Hostin
+                                            </a>
+                </li>
+                            <li menuItemName="Register a New Domain" id="Primary_Navbar-Store-Register_a_New_Domain">
+                    <a href="/support/cart.php?a=add&domain=register">
+                                                Register a New Domain
+                                            </a>
+                </li>
+                            <li menuItemName="Transfer a Domain to Us" id="Primary_Navbar-Store-Transfer_a_Domain_to_Us">
+                    <a href="/support/cart.php?a=add&domain=transfer">
+                                                Transfer Domains to Us
+                                            </a>
+                </li>
+                        </ul>
+            </li>
+    <li menuItemName="Announcements" class="" id="Primary_Navbar-Announcements">
+        <a href="/support/index.php?rp=/announcements">
+                        Announcements
+                                </a>
+            </li>
+    <li menuItemName="Knowledgebase" class="" id="Primary_Navbar-Knowledgebase">
+        <a href="/support/index.php?rp=/knowledgebase">
+                        Knowledgebase
+                                </a>
+            </li>
+    <li menuItemName="Network Status" class="" id="Primary_Navbar-Network_Status">
+        <a href="/support/serverstatus.php">
+                        Network Status
+                                </a>
+            </li>
+    <li menuItemName="Contact Us" class="" id="Primary_Navbar-Contact_Us">
+        <a href="/support/contact.php">
+                        Contact Us
+                                </a>
+            </li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li menuItemName="Account" class="dropdown" id="Secondary_Navbar-Account">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Account
+                        &nbsp;<b class="caret"></b>        </a>
+                    <ul class="dropdown-menu">
+                            <li menuItemName="Login" id="Secondary_Navbar-Account-Login">
+                    <a href="/support/clientarea.php">
+                                                Login
+                                            </a>
+                </li>
+                            <li menuItemName="Register" id="Secondary_Navbar-Account-Register">
+                    <a href="/support/register.php">
+                                                Register
+                                            </a>
+                </li>
+                            <li menuItemName="Divider" class="nav-divider" id="Secondary_Navbar-Account-Divider">
+                    <a href="">
+                                                -----
+                                            </a>
+                </li>
+                            <li menuItemName="Forgot Password?" id="Secondary_Navbar-Account-Forgot_Password?">
+                    <a href="/support/pwreset.php">
+                                                Forgot Password?
+                                            </a>
+                </li>
+                        </ul>
+            </li>
+
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+</section>
+
+
+
+<section id="main-body">
+    <div class="container">
+        <div class="row">
+
+                <!-- Container for main page display content -->
+        <div class="col-xs-12 main-content">
+            
+
+<link rel="stylesheet" type="text/css" href="/support/templates/orderforms/standard_cart/css/all.min.css?v=21efa2" />
+<script type="text/javascript" src="/support/templates/orderforms/standard_cart/js/scripts.min.js?v=21efa2"></script>
+
+<div id="order-standard_cart">
+
+    <div class="row">
+
+        <div class="pull-md-right col-md-9">
+
+            <div class="header-lined">
+                <h1>Choose a Domain...</h1>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 pull-md-left sidebar hidden-xs hidden-sm">
+
+                <div menuItemName="Categories" class="panel panel-sidebar">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;
+                
+                Categories
+
+                
+                <i class="fas fa-chevron-up panel-minimise pull-right"></i>
+            </h3>
+        </div>
+
+        
+                    <div class="list-group">
+                                                            <a menuItemName="Shared Hostin" href="/support/cart.php?gid=1" class="list-group-item" id="Secondary_Sidebar-Categories-Shared_Hostin">
+                            
+                            Shared Hostin
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+        <div menuItemName="Actions" class="panel panel-sidebar">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                                    <i class="fas fa-plus"></i>&nbsp;
+                
+                Actions
+
+                
+                <i class="fas fa-chevron-up panel-minimise pull-right"></i>
+            </h3>
+        </div>
+
+        
+                    <div class="list-group">
+                                                            <a menuItemName="Domain Registration" href="/support/cart.php?a=add&domain=register" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Registration">
+                                                            <i class="fas fa-globe fa-fw"></i>&nbsp;
+                            
+                            Register a New Domain
+
+                                                    </a>
+                                                                                <a menuItemName="Domain Transfer" href="/support/cart.php?a=add&domain=transfer" class="list-group-item" id="Secondary_Sidebar-Actions-Domain_Transfer">
+                                                            <i class="fas fa-share fa-fw"></i>&nbsp;
+                            
+                            Transfer in a Domain
+
+                                                    </a>
+                                                                                <a menuItemName="View Cart" href="/support/cart.php?a=view" class="list-group-item" id="Secondary_Sidebar-Actions-View_Cart">
+                                                            <i class="fas fa-shopping-cart fa-fw"></i>&nbsp;
+                            
+                            View Cart
+
+                                                    </a>
+                                                </div>
+        
+            </div>
+
+    
+        </div>
+
+        <div class="col-md-9 pull-md-right">
+
+            <div class="categories-collapsed visible-xs visible-sm clearfix">
+
+    <div class="pull-left form-inline">
+        <form method="get" action="/support/cart.php">
+            <select name="gid" onchange="submit()" class="form-control">
+                <optgroup label="Product Categories">
+                                            <option value="1">Shared Hostin</option>
+                                    </optgroup>
+                <optgroup label="Actions">
+                                                                <option value="registerdomain">Register a New Domain</option>
+                                                                <option value="transferdomain">Transfer in a Domain</option>
+                                        <option value="viewcart">View Cart</option>
+                </optgroup>
+            </select>
+        </form>
+    </div>
+
+    
+</div>
+
+            <form id="frmProductDomain">
+                <input type="hidden" id="frmProductDomainPid" value="3" />
+                <div class="domain-selection-options">
+                                                                <div class="option">
+                            <label>
+                                <input type="radio" name="domainoption" value="register" id="selregister" checked />Register a new domain
+                            </label>
+                            <div class="domain-input-group clearfix" id="domainregister">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-1">
+                                        <div class="row domains-row">
+                                            <div class="col-xs-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">www.</span>
+                                                    <input type="text" id="registersld" value="" class="form-control" autocapitalize="none" data-toggle="tooltip" data-placement="top" data-trigger="manual" title="Please enter your domain" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <select id="registertld" class="form-control">
+                                                                                                            <option value=".com">.com</option>
+                                                                                                            <option value=".net">.net</option>
+                                                                                                            <option value=".org">.org</option>
+                                                                                                            <option value=".biz">.biz</option>
+                                                                                                            <option value=".info">.info</option>
+                                                                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button type="submit" class="btn btn-primary btn-block">
+                                            Check
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                <div class="option">
+                            <label>
+                                <input type="radio" name="domainoption" value="transfer" id="seltransfer" />Transfer your domain from another registrar
+                            </label>
+                            <div class="domain-input-group clearfix" id="domaintransfer">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-1">
+                                        <div class="row domains-row">
+                                            <div class="col-xs-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">www.</span>
+                                                    <input type="text" id="transfersld" value="" class="form-control" autocapitalize="none" data-toggle="tooltip" data-placement="top" data-trigger="manual" title="Please enter your domain"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <select id="transfertld" class="form-control">
+                                                                                                            <option value=".com">.com</option>
+                                                                                                            <option value=".net">.net</option>
+                                                                                                            <option value=".org">.org</option>
+                                                                                                            <option value=".biz">.biz</option>
+                                                                                                            <option value=".info">.info</option>
+                                                                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button type="submit" class="btn btn-primary btn-block">
+                                            Transfer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                <div class="option">
+                            <label>
+                                <input type="radio" name="domainoption" value="owndomain" id="selowndomain" />I will use my existing domain and update my nameservers
+                            </label>
+                            <div class="domain-input-group clearfix" id="domainowndomain">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <div class="row domains-row">
+                                            <div class="col-xs-2 text-right">
+                                                <p class="form-control-static">www.</p>
+                                            </div>
+                                            <div class="col-xs-7">
+                                                <input type="text" id="owndomainsld" value="" placeholder="example" class="form-control" autocapitalize="none" data-toggle="tooltip" data-placement="top" data-trigger="manual" title="Please enter your domain" />
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <input type="text" id="owndomaintld" value="" placeholder="com" class="form-control" autocapitalize="none" data-toggle="tooltip" data-placement="top" data-trigger="manual" title="Required" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <button type="submit" class="btn btn-primary btn-block" id="useOwnDomain">
+                                            Use
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                        </div>
+
+                
+            </form>
+
+            <div class="clearfix"></div>
+            <form method="post" action="cart.php?a=add&pid=3&domainselect=1" id="frmProductDomainSelections">
+<input type="hidden" name="token" value="65af1b2077faf0000e3062d298fddd989a728c55" />
+
+                <div id="DomainSearchResults" class="hidden">
+
+                    <div id="searchDomainInfo">
+                        <p id="primaryLookupSearching" class="domain-lookup-loader domain-lookup-primary-loader domain-searching domain-checker-result-headline">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <span class="domain-lookup-register-loader">Checking availability...</span>
+                            <span class="domain-lookup-transfer-loader">Verifying transfer eligibility...</span>
+                            <span class="domain-lookup-other-loader">Verifying your domain selection...</span>
+                        </p>
+                        <div id="primaryLookupResult" class="domain-lookup-result domain-lookup-primary-results hidden">
+                            <div class="domain-unavailable domain-checker-unavailable headline"><strong>:domain</strong> is unavailable</div>
+                            <div class="domain-available domain-checker-available headline">Congratulations! <strong></strong> is available!</div>
+                            <div class="btn btn-primary domain-contact-support headline">Contact Us</div>
+                            <div class="transfer-eligible">
+                                <p class="domain-checker-available headline">Your domain is eligible for transfer</p>
+                                <p>Please ensure you have unlocked your domain at your current registrar before continuing.</p>
+                            </div>
+                            <div class="transfer-not-eligible">
+                                <p class="domain-checker-unavailable headline">Not Eligible for Transfer</p>
+                                <p>The domain you entered does not appear to be registered.</p>
+                                <p>If the domain was registered recently, you may need to try again later.</p>
+                                <p>Alternatively, you can perform a search to register this domain.</p>
+                            </div>
+                            <div class="domain-invalid">
+                                <p class="domain-checker-unavailable headline">Invalid domain name provided</p>
+                                <p>
+                                    Domains must begin with a letter or a number<span class="domain-length-restrictions"> and be between <span class="min-length"></span> and <span class="max-length"></span> characters in length</span><br />
+                                    Please check your entry and try again.
+                                </p>
+                            </div>
+                            <div class="domain-price">
+                                <span class="register-price-label">Continue to register this domain for</span>
+                                <span class="transfer-price-label hidden">Transfer to us and extend by 1 year* for</span>
+                                <span class="price"></span>
+                            </div>
+                            <input type="hidden" id="resultDomainOption" name="domainoption" />
+                            <input type="hidden" id="resultDomain" name="domains[]" />
+                            <input type="hidden" id="resultDomainPricingTerm" />
+                        </div>
+                    </div>
+
+                                            
+                        <div class="suggested-domains hidden">
+                            <div class="panel-heading">
+                                Suggested Domains
+                            </div>
+                            <div id="suggestionsLoader" class="panel-body domain-lookup-loader domain-lookup-suggestions-loader">
+                                <i class="fas fa-spinner fa-spin"></i> Generating suggestions for you
+                            </div>
+                            <ul id="domainSuggestions" class="domain-lookup-result list-group hidden">
+                                <li class="domain-suggestion list-group-item hidden">
+                                    <span class="domain"></span><span class="extension"></span>
+                                    <button type="button" class="btn btn-add-to-cart product-domain" data-whois="1" data-domain="">
+                                        <span class="to-add">Add to Cart</span>
+                                        <span class="added">Added</span>
+                                        <span class="unavailable">Taken</span>
+                                    </button>
+                                    <button type="button" class="btn btn-primary domain-contact-support hidden">Contact Support to Purchase</button>
+                                    <span class="price"></span>
+                                    <span class="promo hidden"></span>
+                                </li>
+                            </ul>
+                            <div class="panel-footer more-suggestions hidden text-center">
+                                <a id="moreSuggestions" href="#" onclick="loadMoreSuggestions();return false;">Give me more suggestions!</a>
+                                <span id="noMoreSuggestions" class="no-more small hidden">That's all the results we have for you! If you still haven't found what you're looking for, please try a different search term or keyword.</span>
+                            </div>
+                            <div class="text-center text-muted domain-suggestions-warning">
+                                <p>Domain name suggestions may not always be available. Availability is checked in real-time at the point of adding to the cart.</p>
+                            </div>
+                        </div>
+                                    </div>
+
+                <div class="text-center">
+                    <button id="btnDomainContinue" type="submit" class="btn btn-primary btn-lg hidden" disabled="disabled">
+                        Continue
+                        &nbsp;<i class="fas fa-arrow-circle-right"></i>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<p style="text-align:center;">Powered by <a href="https://www.whmcs.com/" target="_blank">WHMCompleteSolution</a></p>
+
+                </div><!-- /.main-content -->
+                            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+        <p>Copyright &copy; 2019 TeamPresta. All Rights Reserved.</p>
+    </div>
+</section>
+
+<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content panel panel-primary">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">Title</h4>
+            </div>
+            <div class="modal-body panel-body">
+                Loading...
+            </div>
+            <div class="modal-footer panel-footer">
+                <div class="pull-left loader">
+                    <i class="fas fa-circle-notch fa-spin"></i> Loading...
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary modal-submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
