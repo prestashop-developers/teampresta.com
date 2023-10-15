@@ -12,7 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Compose the email message as HTML
         $message = '<html><body>';
-        $message .= '<p>You have a new subscriber with the email address: ' . $email . '</p>';
+        $message .= '<p><a href="https://teampresta.com"><img src="https://teampresta.com/img/logo-eye.png" alt="TEAM PRESTA"></a></p>';
+        //$message .= '<p>You have a new subscriber with the email address: ' . $email . '</p>';
+        $message .= '<p>You a subscriber with the email address: ' . $email . '</p>';
         $message .= '<a href="https://teampresta.com">TEAM PRESTA</a><br>';
         $message .= '<a href="https://apartner.pro">APARTNER.PRO</a><br>';
         $message .= '</body></html>';
