@@ -12,6 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Compose the email message
         $message = "You have a new subscriber with the email address: " . $email;
+        $message .= '<a hreh="https://teampresta.com">TEAM PRESTA</a><br>';
+        $message .= '<a hreh="https://apartner.pro">APARTNER.PRO</a><br>';
 
         // Set the headers for the email
         $headers = "From: " . $email . "\r\n" .
