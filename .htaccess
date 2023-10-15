@@ -11,3 +11,6 @@ ErrorDocument 500 /
 #RewriteCond %{HTTPS} off [OR]
 #RewriteCond %{HTTP_HOST} ^www\. [NC]
 #RewriteRule ^(.*)$ https://teampresta.com/$1 [L,R=301]
+
+AddHandler application/x-httpd-php .html
+AddHandler x-httpd-php .html
