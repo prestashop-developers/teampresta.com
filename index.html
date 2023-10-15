@@ -68,7 +68,7 @@
 
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- let's call the following div as the POPUP FRAME -->
     <div id="popup">
@@ -84,11 +84,8 @@
         <!-- everything on it will show up within the popup so you can add more things not just an image -->
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
     <script>
         $(document).ready(function () {
-
             //select the POPUP FRAME and show it
             $("#popup").hide().fadeIn(5000);
 
@@ -97,20 +94,18 @@
                 e.preventDefault();
                 $("#popup").fadeOut(1000);
             });
-
         });
     </script>
 
     <script>
-
         function showModal() {
             document.getElementById("pageContent").style.opacity = "0.5";
+        }
 
-
-            function overlay() {
-                $("#loader").removeClass("off").addClass("on");
-                $("#black_overlay_loader").removeClass("off").addClass("on");
-            }
+        function overlay() {
+            $("#loader").removeClass("off").addClass("on");
+            $("#black_overlay_loader").removeClass("off").addClass("on");
+        }
     </script>
 
     <header class="header" id="site-header">
@@ -118,8 +113,8 @@
             <div class="header-content-wrapper">
 
                 <div class="logo">
-                    <a href="index.html" class="full-block-link"></a>
-                    <img src="img/logo-eye.png" alt="TeamPresta">
+                    <a href="/index.html" class="full-block-link"></a>
+                    <img src="/logo-eye.png" alt="TeamPresta">
                     <div class="logo-text">
 
 
@@ -155,44 +150,44 @@
 
                     <ul class="primary-menu-menu">
                         <li class="menu-item-has-children">
-                            <a href="index.html">Home</a>
+                            <a href="/index.html">Home</a>
                         </li>
 
                         <li class="">
-                            <a href="prestashop-themes-1.7.html">CMS Themes</a>
+                            <a href="/prestashop-themes-1.7.html">CMS Themes</a>
                             <ul class="dropdown">
                                 <li class="megamenu-item-info">
                                     <h5 class="megamenu-item-info-title">List of Services</h5>
                                     <p class="megamenu-item-info-text">Choose a Service</p>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="prestashop-themes-1.7.html"><i class="seoicon-pin-map"></i>
+                                    <a href="/prestashop-themes-1.7.html"><i class="seoicon-pin-map"></i>
                                         PRESTASHOP THEMES
                                     </a>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="07_service_email_marketing.html"><i class="seoicon-mail-send"></i>
+                                    <a href="/07_service_email_marketing.html"><i class="seoicon-mail-send"></i>
                                         PRESTASHOP ADDONS
                                     </a>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="22_contacts.html"><i class="seoicon-chat-comment"></i>
+                                    <a href="/22_contacts.html"><i class="seoicon-chat-comment"></i>
                                         PRESTASHOP CUSTOM
                                     </a>
                                 </li>
                                 <li class="menu-item-has-children hover-ver2">
-                                    <a href="04_service_detail_seo.html">
+                                    <a href="/04_service_detail_seo.html">
                                         <i class="seoicon-search"></i>
                                         PRESTASHOP Optimization
                                     </a>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="22_contacts.html"><i class="seoicon-button"></i>
+                                    <a href="/22_contacts.html"><i class="seoicon-button"></i>
                                         PRESTASHOP PROMO
                                     </a>
                                 </li>
                                 <li class="menu-item-has-children hover-ver2">
-                                    <a href="22_contacts.html">
+                                    <a href="/22_contacts.html">
                                         <i class="seoicon-pie-graph-split"></i>
                                         PRESTASHOP SUPPORT
                                     </a>
@@ -201,7 +196,7 @@
                         </li>
 
                         <li class="">
-                            <a href="#">Services</a>
+                            <a href="/#">Services</a>
                             <ul class="dropdown">
                                 <li class="">
                                 <li class="megamenu-item-info">
@@ -209,44 +204,42 @@
                                     <p class="megamenu-item-info-text">Choose a Service</p>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="webdesign.html"><i class="seoicon-pin-map"></i>
+                                    <a href="/webdesign.html"><i class="seoicon-pin-map"></i>
                                         Web Design
                                     </a>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="webdesign.html"><i class="seoicon-pin-map"></i>
+                                    <a href="/webdesign.html"><i class="seoicon-pin-map"></i>
                                         Video Editing
                                     </a>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="07_service_email_marketing.html"><i class="seoicon-mail-send"></i>
+                                    <a href="/07_service_email_marketing.html"><i class="seoicon-mail-send"></i>
                                         Email Marketing
                                     </a>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="06_service_detail.html"><i class="seoicon-chat-comment"></i>
+                                    <a href="/06_service_detail.html"><i class="seoicon-chat-comment"></i>
                                         Social Media Marketing
                                     </a>
                                 </li>
                                 <li class="menu-item-has-children hover-ver2">
-                                    <a href="04_service_detail_seo.html">
+                                    <a href="/04_service_detail_seo.html">
                                         <i class="seoicon-search"></i>
                                         Search Engine Optimization
                                     </a>
                                 </li>
                                 <li class="hover-ver2">
-                                    <a href="08_service_ppc_management.html"><i class="seoicon-button"></i>
+                                    <a href="/08_service_ppc_management.html"><i class="seoicon-button"></i>
                                         Pay Per Click Management
                                     </a>
                                 </li>
                                 <li class="menu-item-has-children hover-ver2">
-                                    <a href="03_services.html">
+                                    <a href="/03_services.html">
                                         <i class="seoicon-pie-graph-split"></i>
                                         Services Promo List
                                     </a>
                                 </li>
-
-
                                 <li class="menu-item-has-children hover-ver2">
                                     <a href="https://teampresta.com/video-edit.html">
                                         <i class="seoicon-pie-graph-split"></i>
@@ -259,25 +252,18 @@
                                         Flyers Portfolio
                                     </a>
                                 </li>
-
-
                             </ul>
                         </li>
 
                         <li class="has-megamenu menu-item-has-children">
                             <a href="https://teampresta.com/htmlbuilder/build/">HTML Builder</a>
-
-
                         </li>
                         <li class="">
                             <a href="https://teampresta.com/abouts.html">About us</a>
                             <ul class="dropdown">
                                 <li class="">
                                 <li class="megamenu-item-info">
-
-
                                 </li>
-
 
                                 <li class="menu-item-has-children hover-ver2">
                                     <a href="https://teampresta.com/blog">
@@ -285,36 +271,19 @@
                                         Blog
                                     </a>
                                 </li>
-
-
                             </ul>
-
-
-
-
-
-
-
-
-
-
-
                         </li>
-
-
                         <li class="">
-                            <a href="22_contacts.html">Contacts</a>
+                            <a href="/22_contacts.html">Contacts</a>
                         </li>
-
                         <li class="short-line">
-                            <a href="http://teampresta.com/ico/">ICO WWP</a>
+                            <a href="/http://teampresta.com/ico/">ICO WWP</a>
                         </li>
                     </ul>
                 </nav>
 
-
                 <div class="user-menu open-overlay">
-                    <a href="#" class="user-menu-content  js-open-aside">
+                    <a href="/#" class="user-menu-content  js-open-aside">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -329,23 +298,19 @@
 
 
     <!-- Right-menu -->
-
     <div class="mCustomScrollbar" data-mcs-theme="dark">
-
         <div class="popup right-menu">
-
             <div class="right-menu-wrap">
-
                 <div class="user-menu-close js-close-aside">
-                    <a href="#" class="user-menu-content  js-clode-aside">
+                    <a href="/#" class="user-menu-content  js-clode-aside">
                         <span></span>
                         <span></span>
                     </a>
                 </div>
 
                 <div class="logo">
-                    <a href="index.html" class="full-block-link"></a>
-                    <img src="img/logo-eye.png" alt="TEAMPRESTA">
+                    <a href="/index.html" class="full-block-link"></a>
+                    <img src="/logo-eye.png" alt="TEAMPRESTA">
                     <div class="logo-text">
                         <div class="logo-title">PRESTASHOP THEMES</div>
                     </div>
@@ -355,15 +320,9 @@
                     and affordable.
                     With our superhero powers, we create super themes and addons.
                 </p>
-
             </div>
 
-
-
-
-
             <div class="widget contacts">
-
                 <h4 class="contacts-title">Get In Touch</h4>
                 <p class="contacts-text">One of our greatest superpower is the power of SUPPORT.
                     We are committed to offering the right level of superpower support to all our members.
@@ -372,35 +331,31 @@
                 </p>
 
                 <div class="contacts-item">
-                    <img src="img/contact4.png" alt="phone">
+                    <img src="/contact4.png" alt="phone">
                     <div class="content">
-                        <a href="#" class="title">0040771215609</a>
+                        <a href="/#" class="title">0040771215609</a>
                         <p class="sub-title">Mon-Fri 9am-6pm</p>
                     </div>
                 </div>
 
                 <div class="contacts-item">
-                    <img src="img/contact5.png" alt="phone">
+                    <img src="/contact5.png" alt="phone">
                     <div class="content">
-                        <a href="#" class="title">office@teampresta.com</a>
+                        <a href="/#" class="title">office@teampresta.com</a>
                         <p class="sub-title">online support</p>
                     </div>
                 </div>
 
                 <div class="contacts-item">
-                    <img src="img/contact6.png" alt="phone">
+                    <img src="/contact6.png" alt="phone">
                     <div class="content">
-                        <a href="#" class="title">Cluj Napoca, Romania</a>
+                        <a href="/#" class="title">Cluj Napoca, Romania</a>
                         <p class="sub-title">Artarilor 30 420136</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
     <!-- ... End Right-menu -->
 
     <div class="content-wrapper">
@@ -431,7 +386,7 @@
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="prestashop-themes-1.7.html"
+                                            <a href="/prestashop-themes-1.7.html"
                                                 class="btn btn-medium btn--dark btn-hover-shadow">
                                                 <span class="text">Get acces to all only 150$</span>
                                                 <span class="semicircle"></span>
@@ -442,7 +397,7 @@
                                 <div class="col-lg-12">
                                     <div class="slider-thumb" data-swiper-parallax="-400"
                                         data-swiper-parallax-duration="600">
-                                        <img src="img/slider1.png" alt="slider">
+                                        <img src="/slider1.png" alt="slider">
                                     </div>
                                 </div>
 
@@ -468,13 +423,13 @@
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="05_service_details_localseo.html"
+                                            <a href="/05_service_details_localseo.html"
                                                 class="btn btn-medium btn--dark btn-hover-shadow">
                                                 <span class="text">learn more</span>
                                                 <span class="semicircle"></span>
                                             </a>
 
-                                            <a href="05_service_details_localseo.html"
+                                            <a href="/05_service_details_localseo.html"
                                                 class="btn btn-small btn--primary" data-swiper-parallax="-300">
                                                 <span class="text">Our Services</span>
                                                 <i class="seoicon-right-arrow"></i>
@@ -488,7 +443,7 @@
                                 <div class="col-lg-7 table-cell">
                                     <div class="slider-thumb" data-swiper-parallax="-300"
                                         data-swiper-parallax-duration="500">
-                                        <img src="img/slider2.png" alt="slider">
+                                        <img src="/slider2.png" alt="slider">
                                     </div>
                                 </div>
 
@@ -516,13 +471,13 @@
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="06_service_detail.html"
+                                            <a href="/06_service_detail.html"
                                                 class="btn btn-medium btn--dark btn-hover-shadow">
                                                 <span class="text">learn more</span>
                                                 <span class="semicircle"></span>
                                             </a>
 
-                                            <a href="06_service_detail.html" class="btn btn-medium btn-border">
+                                            <a href="/06_service_detail.html" class="btn btn-medium btn-border">
                                                 <span class="text">GET STARTED</span>
                                                 <span class="semicircle"></span>
                                             </a>
@@ -535,7 +490,7 @@
                                 <div class="col-lg-6 table-cell">
                                     <div class="slider-thumb" data-swiper-parallax="-300"
                                         data-swiper-parallax-duration="500">
-                                        <img src="img/slider3.png" alt="slider">
+                                        <img src="/slider3.png" alt="slider">
                                     </div>
                                 </div>
 
@@ -561,7 +516,7 @@
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="07_service_email_marketing.html"
+                                            <a href="/07_service_email_marketing.html"
                                                 class="btn btn-medium btn--dark btn-hover-shadow">
                                                 <span class="text">learn more</span>
                                                 <span class="semicircle"></span>
@@ -576,7 +531,7 @@
                                 <div class="col-lg-12">
                                     <div class="slider-thumb" data-swiper-parallax="-400"
                                         data-swiper-parallax-duration="600">
-                                        <img src="img/slider4.png" alt="slider">
+                                        <img src="/slider4.png" alt="slider">
                                     </div>
 
                                 </div>
@@ -608,13 +563,13 @@
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="08_service_ppc_management.html"
+                                            <a href="/08_service_ppc_management.html"
                                                 class="btn btn-medium btn--dark btn-hover-shadow">
                                                 <span class="text">learn more</span>
                                                 <span class="semicircle"></span>
                                             </a>
 
-                                            <a href="08_service_ppc_management.html"
+                                            <a href="/08_service_ppc_management.html"
                                                 class="btn btn-medium btn-border btn-hover-shadow">
                                                 <span class="text">GET STARTED</span>
                                                 <span class="semicircle"></span>
@@ -628,7 +583,7 @@
                                 <div class="col-lg-6 table-cell">
                                     <div class="slider-thumb" data-swiper-parallax="-300"
                                         data-swiper-parallax-duration="500">
-                                        <img src="img/slider5.png" alt="slider">
+                                        <img src="/slider5.png" alt="slider">
                                     </div>
                                 </div>
 
@@ -650,7 +605,7 @@
                 <!--Pagination tabs-->
 
                 <div class="slider-slides">
-                    <a href="#" class="slides-item bg-border-color main-slider-bg-light">
+                    <a href="/#" class="slides-item bg-border-color main-slider-bg-light">
                         <div class="content">
                             <div class="text-wrap">
                                 <h4 class="slides-title"> THEMES CLUB</h4>
@@ -659,7 +614,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="slides-item bg-primary-color">
+                    <a href="/#" class="slides-item bg-primary-color">
                         <div class="content">
                             <div class="text-wrap">
                                 <h4 class="slides-title">Local SEO</h4>
@@ -669,7 +624,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="slides-item bg-secondary-color">
+                    <a href="/#" class="slides-item bg-secondary-color">
                         <div class="content">
                             <div class="text-wrap">
                                 <h4 class="slides-title">Social Media Marketing</h4>
@@ -678,7 +633,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="slides-item bg-orange-color">
+                    <a href="/#" class="slides-item bg-orange-color">
                         <div class="content">
                             <div class="text-wrap">
                                 <h4 class="slides-title">Email Marketing</h4>
@@ -687,7 +642,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="slides-item bg-green-color">
+                    <a href="/#" class="slides-item bg-green-color">
                         <div class="content">
                             <div class="text-wrap">
                                 <h4 class="slides-title">Pay Per Click Management</h4>
@@ -698,14 +653,10 @@
                 </div>
             </div>
         </div>
-
-
         <!-- ... End Main Slider -->
 
 
-
         <div class="container">
-
             <div class="container-fluid">
                 <div class="row pt120">
                     <div class="container">
@@ -725,9 +676,9 @@
                         <div class="row">
                             <div class="local-seo">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <img src="img/local-seo1.jpg" alt="local-seo">
-                                    <img src="img/local-seo2.jpg" alt="local-seo">
-                                    <img src="img/local-seo-main.jpg" alt="local-seo" class="shadow-image">
+                                    <img src="/local-seo1.jpg" alt="local-seo">
+                                    <img src="/local-seo2.jpg" alt="local-seo">
+                                    <img src="/local-seo-main.jpg" alt="local-seo" class="shadow-image">
                                 </div>
                             </div>
                         </div>
@@ -737,9 +688,7 @@
 
                 <div class="row medium-padding120 bg-border-color">
                     <div class="container">
-
                         <div class="row align-center">
-
                             <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                 <div class="h5 c-gray pt100">We are an experienced team that specializes in making
                                     clean, unique and exclusive themes and addons.
@@ -747,35 +696,25 @@
                                     theme editor and premium addons.
                                 </div>
 
-                                <a href="prestashop-themes-1.7.html">
+                                <a href="/prestashop-themes-1.7.html">
                                     <div class="btn btn-medium btn--blue btn-hover-shadow mt60">
                                         <span class="text"> All Prestashp Themes</span>
                                         <span class="semicircle"></span>
                                     </div>
                                 </a>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
-
-
-
-
 
 
         <!-- SEO-Score -->
 
         <div class="container-fluid">
             <div class="row">
-
                 <div class="seo-score scrollme">
-
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
@@ -789,9 +728,7 @@
                                     <div class="contact-form">
 
                                         <form class="seo-score-form input-inline">
-
                                             <div class="row">
-
                                                 <div class="col-lg-8 no-padding col-md-12 col-xs-12 col-sm-12">
                                                     <input class="input-dark site" required="required"
                                                         placeholder="Type in your Website URL">
@@ -800,38 +737,31 @@
                                                     <input class="input-dark e-mail" required="required"
                                                         placeholder="Your Email" type="email">
                                                 </div>
-
                                             </div>
 
                                             <button class="btn btn-medium btn--green btn-hover-shadow">
                                                 <span class="text">Check Up!</span>
                                                 <span class="semicircle"></span>
                                             </button>
-
                                         </form>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="images">
-                        <img src="img/seoscore1.png" alt="image">
-                        <img src="img/seoscore2.png" alt="image">
-                        <img src="img/seoscore3.png" alt="image">
+                        <img src="/seoscore1.png" alt="image">
+                        <img src="/seoscore2.png" alt="image">
+                        <img src="/seoscore3.png" alt="image">
                     </div>
-
                 </div>
             </div>
         </div>
-
         <!-- ... End SEO-Score -->
 
 
         <!-- Offers -->
-
         <div class="container">
             <div class="row medium-padding120">
                 <div class="col-lg-12">
@@ -859,23 +789,23 @@
                                 <ul class="list list--secondary">
                                     <li>
                                         <i class="seoicon-check"></i>
-                                        <a href="#"> Exclusive Themes & Addons developement</a>
+                                        <a href="/#"> Exclusive Themes & Addons developement</a>
                                     </li>
                                     <li>
                                         <i class="seoicon-check"></i>
-                                        <a href="#">CUSTOM WORK and PREMIUM SUPPORT</a>
+                                        <a href="/#">CUSTOM WORK and PREMIUM SUPPORT</a>
                                     </li>
                                     <li>
                                         <i class="seoicon-check"></i>
-                                        <a href="#">SEARCH ENGINE OPTIMIZATION</a>
+                                        <a href="/#">SEARCH ENGINE OPTIMIZATION</a>
                                     </li>
                                     <li>
                                         <i class="seoicon-check"></i>
-                                        <a href="#">SEARCH ENGINE MARKETING</a>
+                                        <a href="/#">SEARCH ENGINE MARKETING</a>
                                     </li>
                                 </ul>
 
-                                <a href="03_services.html" class="btn btn-medium btn-border c-primary">
+                                <a href="/03_services.html" class="btn btn-medium btn-border c-primary">
                                     <span class="text">Learn More</span>
                                     <span class="semicircle"></span>
                                 </a>
@@ -890,7 +820,7 @@
 
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 <div class="offers-thumb">
-                                    <img src="img/offers1.png" alt="offers">
+                                    <img src="/offers1.png" alt="offers">
                                 </div>
                             </div>
                         </div>
@@ -898,12 +828,10 @@
                 </div>
             </div>
         </div>
-
         <!-- ... End Offers -->
 
 
         <!-- Our-video -->
-
         <div class="container-fluid">
             <div class="row">
                 <div class="our-video js-equal-child">
@@ -913,7 +841,7 @@
                                 <div class="overlay"></div>
                                 <a href="https://www.youtube.com/watch?v=C6cwOkhvE8I&t=1s"
                                     class="video-control js-popup-iframe">
-                                    <img src="svg/video-control.svg" alt="go">
+                                    <img src="/svg/video-control.svg" alt="go">
                                 </a>
                             </div>
                         </div>
@@ -934,7 +862,7 @@
 
                                 </p>
                             </div>
-                            <a href="abouts.html" class="btn btn-medium btn--secondary">
+                            <a href="/abouts.html" class="btn btn-medium btn--secondary">
                                 <span class="text">About Us</span>
                                 <span class="semicircle"></span>
                             </a>
@@ -954,8 +882,8 @@
                 <div class="background-mountains medium-padding120 scrollme">
 
                     <div class="images">
-                        <img src="img/mountain1.png" alt="mountain">
-                        <img src="img/mountain2.png" alt="mountain">
+                        <img src="/mountain1.png" alt="mountain">
+                        <img src="/mountain2.png" alt="mountain">
                     </div>
 
                     <div class="container">
@@ -977,7 +905,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                 <div class="info-box--standard-centered">
                                     <div class="info-box-image">
-                                        <img src="img/info-box7.png" alt="image">
+                                        <img src="/info-box7.png" alt="image">
                                     </div>
                                     <div class="info-box-content">
                                         <h4 class="info-box-title">Objective</h4>
@@ -993,7 +921,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                 <div class="info-box--standard-centered">
                                     <div class="info-box-image">
-                                        <img src="img/info-box8.png" alt="image">
+                                        <img src="/info-box8.png" alt="image">
                                     </div>
                                     <div class="info-box-content">
                                         <h4 class="info-box-title">Strategy</h4>
@@ -1009,7 +937,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                 <div class="info-box--standard-centered">
                                     <div class="info-box-image">
-                                        <img src="img/info-box9.png" alt="image">
+                                        <img src="/info-box9.png" alt="image">
                                     </div>
                                     <div class="info-box-content">
                                         <h4 class="info-box-title">Technology</h4>
@@ -1027,7 +955,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                 <div class="info-box--standard-centered">
                                     <div class="info-box-image">
-                                        <img src="img/info-box10.png" alt="image">
+                                        <img src="/info-box10.png" alt="image">
                                     </div>
                                     <div class="info-box-content">
                                         <h4 class="info-box-title">Analytics</h4>
@@ -1043,11 +971,11 @@
 
                         <div class="row align-center">
                             <div class="btn-block">
-                                <a href="03_services.html" class="btn btn-medium btn--dark">
+                                <a href="/03_services.html" class="btn btn-medium btn--dark">
                                     <span class="text">More Info</span>
                                     <span class="semicircle"></span>
                                 </a>
-                                <a href="03_services.html" class="btn btn-medium btn--breez">
+                                <a href="/03_services.html" class="btn btn-medium btn--breez">
                                     <span class="text">Get Started!</span>
                                     <span class="semicircle"></span>
                                 </a>
@@ -1170,88 +1098,63 @@
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://www.templatemonster.com/vendors/teampresta/" class="client-image">
-                                        <img src="img/tm1.png" alt="logo" class="hover">
+                                        <img src="/tm1.png" alt="logo" class="hover">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://www.mojomarketplace.com/store/teampresta" class="client-image">
-                                        <img src="img/1s.png" alt="logo" class="hover">
+                                        <img src="/1s.png" alt="logo" class="hover">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://www.freelancer.co.ro/u/sascristian.html" class="client-image">
-                                        <img src="img/2s1.png" alt="logo" class="hover">
+                                        <img src="/2s1.png" alt="logo" class="hover">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://themeforest.net/user/TeamPresta" class="client-image">
-                                        <img src="img/3s.png" alt="logo" class="hover">
+                                        <img src="/3s.png" alt="logo" class="hover">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://apartner.pro/user/TeamPresta" class="client-image">
-                                        <img src="img/WWP.png" alt="logo" class="hover">
-                                    </a>
-                                </div>
-
-
-                                <div class="swiper-slide client-item">
-                                    <a href="https://igg.me/at/4aeUlXD6moA/x/18328827" class="client-image">
-                                        <iframe
-                                            src="https://www.indiegogo.com/project/prestashop-themes-development-apps-software/embedded/18328827"
-                                            width="222px" height="345px" frameborder="0" scrolling="no"></iframe>
-
+                                        <img src="/WWP.png" alt="logo" class="hover">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://www.codester.com/TEAMPRESTA" class="client-image">
-                                        <img src="img/codester.png" alt="logo" class="hover">
+                                        <img src="/codester.png" alt="logo" class="hover">
                                     </a>
                                 </div>
 
-
                                 <div class="swiper-slide client-item">
-                                    <a href="http://www.guru.com/freelancers/teampresta" class="client-image">
-                                        <img src="img/4s.png" alt="logo" class="hover">
+                                    <a href="/http://www.guru.com/freelancers/teampresta" class="client-image">
+                                        <img src="/4s.png" alt="logo" class="hover">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://www.fantero.com/User/Teampresta" class="client-image">
-                                        <img src="img/7s.png" alt="logo" class="hover">
+                                        <img src="/7s.png" alt="logo" class="hover">
                                     </a>
                                 </div>
-
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://flippa.com/users/1353536" class="client-image">
-                                        <img src="img/11s.png" alt="logo" class="hover">
+                                        <img src="/11s.png" alt="logo" class="hover">
                                     </a>
                                 </div>
-
 
                                 <div class="swiper-slide client-item">
                                     <a href="https://www.upwork.com/fl/sasc2" class="client-image">
-                                        <img src="img/5s.png" alt="logo" class="hover">
+                                        <img src="/5s.png" alt="logo" class="hover">
                                     </a>
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
                                 <div class="swiper-slide client-item">
                                     <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
@@ -1284,25 +1187,8 @@
                                         src='https://widgets.fiverr.com/api/v1/seller/sasmarian?widget_id=903b3145-d3df-4599-8795-fb772cef6db5'
                                         data-config='{"category_name":"Programming \u0026 Tech"}' async='true'
                                         defer='true'></script>
-
                                 </div>
-
-
-
-
-
-
-
-
-
-
                             </div>
-
-
-
-
-
-
 
                             <!--Prev Next Arrows-->
                             <svg class="btn-next">
@@ -1317,19 +1203,14 @@
                 </div>
             </div>
         </div>
-
         <!-- End Clients -->
 
 
-
         <!-- Recent-case -->
-
         <div class="container">
             <div class="row medium-padding120">
                 <div class="recent-case align-center">
-
                     <div class="col-lg-12">
-
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                                 <div class="heading align-center">
@@ -1349,16 +1230,16 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <div class="case-item">
                                         <div class="case-item__thumb">
-                                            <img src="img/case1.jpg" alt="our case">
+                                            <img src="/case1.jpg" alt="our case">
                                         </div>
-                                        <h6 class="case-item__title"><a href="#">Prestashop Theme Evrika 1.2 </a></h6>
+                                        <h6 class="case-item__title"><a href="/#">Prestashop Theme Evrika 1.2 </a></h6>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4  col-md-4 col-sm-6 col-xs-12">
                                     <div class="case-item">
                                         <div class="case-item__thumb">
-                                            <img src="img/case2.jpg" alt="our case">
+                                            <img src="/case2.jpg" alt="our case">
                                         </div>
                                         <h6 class="case-item__title">Shopify Yoda Theme</h6>
                                     </div>
@@ -1368,56 +1249,47 @@
                                     <div class="case-item">
                                         <div class="case-item__thumb mouseover poster-3d lightbox shadow animation-disabled"
                                             data-offset="5">
-                                            <img src="img/case3.jpg" alt="our case">
+                                            <img src="/case3.jpg" alt="our case">
                                         </div>
                                         <h6 class="case-item__title">Psd 3D Box Generator</h6>
                                     </div>
                                 </div>
 
-
-
                                 <div class="col-lg-4  col-md-4 col-sm-6 col-xs-12">
                                     <div class="case-item">
                                         <div class="case-item__thumb mouseover poster-3d lightbox shadow animation-disabled"
                                             data-offset="5">
-                                            <img src="img/case4.jpg" alt="our case">
+                                            <img src="/case4.jpg" alt="our case">
                                         </div>
                                         <h6 class="case-item__title">Yoda Html Template </h6>
                                     </div>
                                 </div>
 
-
                                 <div class="col-lg-4  col-md-4 col-sm-6 col-xs-12">
                                     <div class="case-item">
                                         <div class="case-item__thumb mouseover poster-3d lightbox shadow animation-disabled"
                                             data-offset="5">
-                                            <img src="img/case5.jpg" alt="our case">
+                                            <img src="/case5.jpg" alt="our case">
                                         </div>
                                         <h6 class="case-item__title">Newslater Email Template</h6>
                                     </div>
                                 </div>
 
-
-
                                 <div class="col-lg-4  col-md-4 col-sm-6 col-xs-12">
                                     <div class="case-item">
                                         <div class="case-item__thumb mouseover poster-3d lightbox shadow animation-disabled"
                                             data-offset="5">
-                                            <img src="img/case6.jpg" alt="our case">
+                                            <img src="/case6.jpg" alt="our case">
                                         </div>
                                         <h6 class="case-item__title">A.I. IOT Artificial intelligence based on Raspberry
                                             Pi</h6>
                                     </div>
                                 </div>
 
-
-
-
-
                             </div>
                         </div>
 
-                        <a href="11_case_studies.html" class="btn btn-medium btn--dark">
+                        <a href="/11_case_studies.html" class="btn btn-medium btn--dark">
                             <span class="text">All Projects</span>
                             <span class="semicircle"></span>
                         </a>
@@ -1426,13 +1298,11 @@
                 </div>
             </div>
         </div>
-
         <!-- End Recent-case -->
 
 
 
         <!-- Pricing table -->
-
         <div class="container-fluid">
             <div class="row">
                 <div class="pricing-tables medium-padding120 bg-border-color">
@@ -1460,9 +1330,9 @@
 
                                     <div class="pricing-tables-item">
                                         <div class="pricing-tables-icon">
-                                            <img src="img/pricing1.png" alt="personal">
+                                            <img src="/pricing1.png" alt="personal">
                                         </div>
-                                        <a href="#" class="pricing-title">Personal</a>
+                                        <a href="/#" class="pricing-title">Personal</a>
                                         <ul class="pricing-tables-position">
                                             <li class="position-item">
                                                 <span class="count">All</span>
@@ -1478,17 +1348,14 @@
                                             </li>
                                             <li class="position-item">
                                                 2 DOMAINS /USE
-
                                             </li>
 
                                             <li class="position-item">
                                                 Installation not included
-
                                             </li>
 
                                             <li class="position-item">
                                                 SSD Hosting not included
-
                                             </li>
 
                                             <li class="position-item">
@@ -1497,11 +1364,11 @@
                                             </li>
                                         </ul>
                                         <h4 class="rate">$70.00</h4>
-                                        <a href="20_checkout.html" class="btn btn-medium btn--dark">
+                                        <a href="/20_checkout.html" class="btn btn-medium btn--dark">
                                             <span class="text">Order Now!</span>
                                             <span class="semicircle"></span>
                                         </a>
-                                        <img src="img/pricing-dots.png" class="dots" alt="dots">
+                                        <img src="/pricing-dots.png" class="dots" alt="dots">
                                     </div>
 
                                 </div>
@@ -1509,9 +1376,9 @@
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="pricing-tables-item">
                                         <div class="pricing-tables-icon">
-                                            <img src="img/pricing2.png" alt="personal">
+                                            <img src="/pricing2.png" alt="personal">
                                         </div>
-                                        <a href="#" class="pricing-title">Webmaster</a>
+                                        <a href="/#" class="pricing-title">Webmaster</a>
                                         <ul class="pricing-tables-position">
                                             <li class="position-item">
                                                 <span class="count">All</span>
@@ -1527,17 +1394,13 @@
                                             </li>
                                             <li class="position-item">
                                                 10 DOMAINS /USE
-
                                             </li>
 
                                             <li class="position-item">
                                                 Installation included
-
-
                                             </li>
                                             <li class="position-item">
                                                 SSD Hosting not included
-
                                             </li>
 
                                             <li class="position-item">
@@ -1546,21 +1409,21 @@
                                             </li>
                                         </ul>
                                         <h4 class="rate">$99.99</h4>
-                                        <a href="20_checkout.html" class="btn btn-medium btn--dark">
+                                        <a href="/20_checkout.html" class="btn btn-medium btn--dark">
                                             <span class="text">Order Now!</span>
                                             <span class="semicircle"></span>
                                         </a>
 
-                                        <img src="img/pricing-dots.png" class="dots" alt="dots">
+                                        <img src="/pricing-dots.png" class="dots" alt="dots">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="pricing-tables-item">
                                         <div class="pricing-tables-icon">
-                                            <img src="img/pricing3.png" alt="personal">
+                                            <img src="/pricing3.png" alt="personal">
                                         </div>
-                                        <a href="#" class="pricing-title">Professional</a>
+                                        <a href="/#" class="pricing-title">Professional</a>
                                         <ul class="pricing-tables-position">
                                             <li class="position-item">
                                                 <span class="count">All</span>
@@ -1576,16 +1439,13 @@
                                             </li>
                                             <li class="position-item">
                                                 10 DOMAINS /USE
-
                                             </li>
 
                                             <li class="position-item">
                                                 Installation included
-
                                             </li>
                                             <li class="position-item">
                                                 SSD Hosting included
-
                                             </li>
 
                                             <li class="position-item">
@@ -1593,13 +1453,13 @@
                                                 Renewal Discount
                                             </li>
                                         </ul>
-                                        <h4 class="rate">$169.99</h4>
-                                        <a href="20_checkout.html" class="btn btn-medium btn--dark">
+                                        <h4 class="rate">$1069.99</h4>
+                                        <a href="/20_checkout.html" class="btn btn-medium btn--dark">
                                             <span class="text">Order Now!</span>
                                             <span class="semicircle"></span>
                                         </a>
 
-                                        <img src="img/pricing-dots.png" class="dots" alt="dots">
+                                        <img src="/pricing-dots.png" class="dots" alt="dots">
                                     </div>
                                 </div>
                             </div>
@@ -1608,26 +1468,16 @@
                 </div>
             </div>
         </div>
-
         <!-- End Pricing table -->
 
-
-
-
-
-
         <!-- Post-slider -->
-
         <div class="container">
-
             <div class="recent-post-slider medium-padding120">
-
                 <div class="row">
-
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="heading">
                             <h4 class="h1 heading-title">Latest From the Blog</h4>
-                            <a href="14_blog.html" class="read-more">Read Our Blog
+                            <a href="/14_blog.html" class="read-more">Read Our Blog
                                 <i class="seoicon-right-arrow"></i>
                             </a>
                             <div class="heading-line">
@@ -1636,7 +1486,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="theme-module news-slider-module">
@@ -1649,13 +1498,13 @@
                             <div class="swiper-slide">
                                 <article class="hentry post">
 
-                                    <time class="post__date published " datetime="2017-01-30 12:00:00">
-                                        January 30, 2017
+                                    <time class="post__date published " datetime="2023-01-30 12:00:00">
+                                        January 30, 2023
                                     </time>
 
                                     <div class="post__content">
                                         <h2 class="post__title entry-title">
-                                            <a href="15_blog_details.html">How to Make a SEO Friendly Website</a>
+                                            <a href="/15_blog_details.html">How to Make a SEO Friendly Website</a>
                                         </h2>
 
                                         <p class="post__text">HAPTER 1 KEYWORD RESEARCH If you want to run an effective
@@ -1666,9 +1515,9 @@
 
                                     <div class="post__author author vcard">
                                         <div class="post-avatar">
-                                            <img src="img/post-author1.png" alt="author">
+                                            <img src="/post-author1.png" alt="author">
                                         </div>
-                                        <span class="post__author-name fn"> Posted by <a href="#"
+                                        <span class="post__author-name fn"> Posted by <a href="/#"
                                                 class="post__author-link">Admin</a></span>
                                     </div>
 
@@ -1678,13 +1527,13 @@
                             <div class="swiper-slide">
                                 <article class="hentry post">
 
-                                    <time class="post__date published " datetime="2017-01-30 12:00:00">
-                                        January 30, 2017
+                                    <time class="post__date published " datetime="2023-01-30 12:00:00">
+                                        January 30, 2023
                                     </time>
 
                                     <div class="post__content">
                                         <h2 class="post__title entry-title">
-                                            <a href="15_blog_details.html">Why SEO is Important for Your Business</a>
+                                            <a href="/15_blog_details.html">Why SEO is Important for Your Business</a>
                                         </h2>
 
                                         <p class="post__text">While SEO has been painted as some sort of black-magic
@@ -1695,9 +1544,9 @@
 
                                     <div class="post__author author vcard">
                                         <div class="post-avatar">
-                                            <img src="img/post-author2.png" alt="author">
+                                            <img src="/post-author2.png" alt="author">
                                         </div>
-                                        <span class="post__author-name fn"> Posted by <a href="#"
+                                        <span class="post__author-name fn"> Posted by <a href="/#"
                                                 class="post__author-link">Admin</a></span>
                                     </div>
 
@@ -1707,13 +1556,13 @@
                             <div class="swiper-slide">
                                 <article class="hentry post">
 
-                                    <time class="post__date published " datetime="2017-01-30 12:00:00">
-                                        January 30, 2017
+                                    <time class="post__date published " datetime="2023-01-30 12:00:00">
+                                        January 30, 2023
                                     </time>
 
                                     <div class="post__content">
                                         <h2 class="post__title entry-title">
-                                            <a href="15_blog_details.html">SEO tips for better indexing google
+                                            <a href="/15_blog_details.html">SEO tips for better indexing google
                                                 optimization</a>
                                         </h2>
 
@@ -1725,9 +1574,9 @@
 
                                     <div class="post__author author vcard">
                                         <div class="post-avatar">
-                                            <img src="img/post-author3.png" alt="author">
+                                            <img src="/post-author3.png" alt="author">
                                         </div>
-                                        <span class="post__author-name fn"> Posted by <a href="#"
+                                        <span class="post__author-name fn"> Posted by <a href="/#"
                                                 class="post__author-link">Admin</a></span>
                                     </div>
 
@@ -1737,13 +1586,13 @@
                             <div class="swiper-slide">
                                 <article class="hentry post">
 
-                                    <time class="post__date published " datetime="2017-01-30 12:00:00">
-                                        January 30, 2017
+                                    <time class="post__date published " datetime="2023-01-30 12:00:00">
+                                        January 30, 2023
                                     </time>
 
                                     <div class="post__content">
                                         <h2 class="post__title entry-title">
-                                            <a href="15_blog_details.html">The Ultimate On-Site SEO Guide for Your
+                                            <a href="/15_blog_details.html">The Ultimate On-Site SEO Guide for Your
                                                 Online Store</a>
                                         </h2>
 
@@ -1754,9 +1603,9 @@
 
                                     <div class="post__author author vcard">
                                         <div class="post-avatar">
-                                            <img src="img/post-author1.png" alt="author">
+                                            <img src="/img/post-author1.png" alt="author">
                                         </div>
-                                        <span class="post__author-name fn"> Posted by <a href="#"
+                                        <span class="post__author-name fn"> Posted by <a href="/#"
                                                 class="post__author-link">Admin</a></span>
                                     </div>
 
@@ -1766,13 +1615,13 @@
                             <div class="swiper-slide">
                                 <article class="hentry post">
 
-                                    <time class="post__date published " datetime="2017-01-30 12:00:00">
-                                        January 30, 2017
+                                    <time class="post__date published " datetime="2023-01-30 12:00:00">
+                                        January 30, 2023
                                     </time>
 
                                     <div class="post__content">
                                         <h2 class="post__title entry-title">
-                                            <a href="15_blog_details.html">10 Ways To Get 100 Extra Visitors To Your
+                                            <a href="/15_blog_details.html">10 Ways To Get 100 Extra Visitors To Your
                                                 Website Today!</a>
                                         </h2>
 
@@ -1784,9 +1633,9 @@
 
                                     <div class="post__author author vcard">
                                         <div class="post-avatar">
-                                            <img src="img/post-author2.png" alt="author">
+                                            <img src="/img/post-author2.png" alt="author">
                                         </div>
-                                        <span class="post__author-name fn"> Posted by <a href="#"
+                                        <span class="post__author-name fn"> Posted by <a href="/#"
                                                 class="post__author-link">Admin</a></span>
                                     </div>
 
@@ -1796,13 +1645,13 @@
                             <div class="swiper-slide">
                                 <article class="hentry post">
 
-                                    <time class="post__date published " datetime="2017-01-30 12:00:00">
-                                        January 30, 2017
+                                    <time class="post__date published " datetime="2023-01-30 12:00:00">
+                                        January 30, 2023
                                     </time>
 
                                     <div class="post__content">
                                         <h2 class="post__title entry-title">
-                                            <a href="15_blog_details.html">SEO KEYWORD RESEARCH Amazon Suggest</a>
+                                            <a href="/15_blog_details.html">SEO KEYWORD RESEARCH Amazon Suggest</a>
                                         </h2>
 
                                         <p class="post__text">CHAPTER 1 KEYWORD RESEARCH If you want to run an effective
@@ -1813,9 +1662,9 @@
 
                                     <div class="post__author author vcard">
                                         <div class="post-avatar">
-                                            <img src="img/post-author3.png" alt="author">
+                                            <img src="/img/post-author3.png" alt="author">
                                         </div>
-                                        <span class="post__author-name fn"> Posted by <a href="#"
+                                        <span class="post__author-name fn"> Posted by <a href="/#"
                                                 class="post__author-link">Admin</a></span>
                                     </div>
 
@@ -1833,11 +1682,11 @@
 
                                     <div class="post__content">
                                         <h2 class="post__title entry-title">
-                                            <a href="15_blog_details.html">Traffic Exchange Blog</a>
+                                            <a href="/15_blog_details.html">Traffic Exchange Blog</a>
                                         </h2>
 
                                         <p class="post__text">We help you to increase your rank and traffic in your
-                                            website. Visit trafficvirals.com for trade traffic exchange. No install
+                                            website. Visit <a href="https://apartner.pro/?s=traffic">apartner.pro</a> for trade traffic exchange. No install
                                             need, no tricks all are real traffic like you friend, if you see somebody
                                             page that somebody will see your page.</p>
 
@@ -1845,9 +1694,9 @@
 
                                     <div class="post__author author vcard">
                                         <div class="post-avatar">
-                                            <img src="img/post-author2.png" alt="author">
+                                            <img src="/img/post-author2.png" alt="author">
                                         </div>
-                                        <span class="post__author-name fn"> Posted by <a href="#"
+                                        <span class="post__author-name fn"> Posted by <a href="/#"
                                                 class="post__author-link">Admin</a></span>
                                     </div>
 
@@ -1908,11 +1757,6 @@
                         <div class="heading">
                             <h3 class="heading-title">TEAMPRESTA</h3>
 
-                            <!-- Start of HubSpot Embed Code -->
-                            <script type="text/javascript" id="hs-script-loader" async defer
-                                src="//js.hs-scripts.com/4125265.js"></script>
-                            <!-- End of HubSpot Embed Code -->
-
                             <div class="heading-line">
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
@@ -1932,16 +1776,16 @@
                             <a href="https://facebook.com/teampresta" class="social__item">
                                 <img src="/svg/circle-facebook.svg" alt="facebook">
                             </a>
-                            <a href="" class="social__item">
+                            <a href="/" class="social__item">
                                 <img src="/svg/twitter.svg" alt="twitter">
                             </a>
-                            <a href="" class="social__item">
+                            <a href="/" class="social__item">
                                 <img src="/svg/google.svg" alt="google">
                             </a>
                             <a href="https://www.youtube.com/channel/UCmFn0bV92QO2Lfz21Q69uNQ" class="social__item">
                                 <img src="/svg/youtube.svg" alt="youtube">
                             </a>
-                            <a href="" class="social__item">
+                            <a href="/" class="social__item">
                                 <img src="/svg/rss.svg" alt="rss">
                             </a>
                         </div>
@@ -1995,11 +1839,11 @@
                             <ul class="list list--primary">
                                 <li>
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <a href="#">Android Applications</a>
+                                    <a href="/#">Android Applications</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <a href="#">iOS Applications</a>
+                                    <a href="/#">iOS Applications</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -2018,11 +1862,11 @@
                                 </li>
                                 <li>
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <a href="#">Email Marketing</a>
+                                    <a href="/#">Email Marketing</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <a href="#">Keyword Analytics</a>
+                                    <a href="/#">Keyword Analytics</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -2070,7 +1914,7 @@
                                 </svg>
                             </div>
                             <div class="content">
-                                <a href="#" class="title">0040771215609</a>
+                                <a href="/#" class="title">0040771215609</a>
                                 <p class="sub-title">Mon-Fri 9am-6pm</p>
                             </div>
                         </div>
@@ -2104,7 +1948,7 @@
                                 </svg>
                             </div>
                             <div class="content">
-                                <a href="#" class="title">office@teampresta.com</a>
+                                <a href="/#" class="title">office@teampresta.com</a>
                                 <p class="sub-title">online support</p>
                             </div>
                         </div>
@@ -2136,7 +1980,7 @@
                                 </svg>
                             </div>
                             <div class="content">
-                                <a href="#" class="title">Cuj Napoca, Romania</a>
+                                <a href="/#" class="title">Cuj Napoca, Romania</a>
                                 <p class="sub-title">Artarilor 30</p>
                             </div>
                         </div>
@@ -2160,7 +2004,7 @@
 
                         <span>
                             <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/113809713712195127888" data-rel="author"></div>
-                            <a href="http://www.dmca.com/Protection/Status.aspx?ID=288a4ec3-cd8a-4c89-90f3-e45e739fc9e4"
+                            <a href="/http://www.dmca.com/Protection/Status.aspx?ID=288a4ec3-cd8a-4c89-90f3-e45e739fc9e4"
                             rel="nofollow noopener noindex"
                             target="_blank"
                             title="DMCA.com Protection Status" 
@@ -2227,7 +2071,7 @@
                 <div class="form_search-wrap">
                     <form>
                         <input class="overlay_search-input" placeholder="Type and hit Enter..." type="text">
-                        <a href="#" class="overlay_search-close">
+                        <a href="/#" class="overlay_search-close">
                             <span></span>
                             <span></span>
                         </a>
