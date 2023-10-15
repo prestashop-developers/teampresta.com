@@ -20,8 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Set the headers for the email
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= "From: " . $email . "\r\n" .
-                "Reply-To: " . $email . "\r\n" .
+        $headers .= "From: " . $recipient . "\r\n" .
+                "Reply-To: " . $recipient . "\r\n" .
                 "X-Mailer: PHP/" . phpversion();
 
         // Send the email
