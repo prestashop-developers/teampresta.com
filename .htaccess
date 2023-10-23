@@ -2,10 +2,13 @@ RewriteEngine On
 #RewriteRule ^ - [R=200]
 #ErrorDocument 200 default
 
-RewriteRule ^(.+)\.php$ /$1.html [L]
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [L]
+RewriteBase /
+
+RewriteCond %{THE_REQUEST} (.*)\.php
+RewriteRule ^(.*)\.php $1.html [R=301,L]
+
+RewriteCond %{THE_REQUEST} (.*)\.html
+RewriteRule ^(.*)\.html $1.php [L]
 
 
 ErrorDocument 401 /
