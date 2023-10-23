@@ -36,6 +36,8 @@ $(function () {
             message = $.trim($form.find('textarea[name="message"]').val()),
             url = $form.attr("action");
 
+            console.log(url);
+
         // Send the data using post
         var posting = $.post(url, {'name': name, 'email': email, 'subject': subject, 'message': message, 'company': company, 'phone': phone, 'permalink': permalink})
 
