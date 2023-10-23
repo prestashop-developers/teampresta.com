@@ -3,15 +3,15 @@ RewriteEngine On
 #ErrorDocument 200 default
 
 RewriteRule ^(.+)\.php$ /$1.html [L]
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [L]
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php [L]
 
 
 ErrorDocument 401 /
 ErrorDocument 402 /
 ErrorDocument 403 /
-ErrorDocument 404 /
+#ErrorDocument 404 /
 ErrorDocument 500 /
 
 #RewriteCond %{HTTPS} off [OR]
