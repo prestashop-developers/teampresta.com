@@ -3,9 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     ///sendemail/?seo=1
-
-
-    exit;
+    //exit;
 
 
 
@@ -29,6 +27,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message .= '<a href="https://teampresta.com">TEAM PRESTA</a><br>';
         $message .= '<a href="https://apartner.pro">APARTNER.PRO</a><br>';
         $message .= '</body></html>';
+
+
+        if($_GET['seo'] == 1) {
+            $message = '<html><body>';
+            $message .= '<p><a href="https://teampresta.com"><img src="https://teampresta.com/img/logo-eye.png" alt="TEAM PRESTA"></a></p>';
+            $message .= '<p>You a subscriber with the email address: ' . $email . ' and send site to check seo</p>';
+            $message .= '<a href="https://teampresta.com">TEAM PRESTA</a><br>';
+            $message .= '<a href="https://apartner.pro">APARTNER.PRO</a><br>';
+            $message .= '</body></html>';
+        }
+
 
         // Set the headers for the email
         $headers = "MIME-Version: 1.0" . "\r\n";

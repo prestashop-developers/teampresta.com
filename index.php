@@ -721,7 +721,7 @@
 
                                     <div class="contact-form">
 
-                                        <form class="seo-score-form input-inline" action="/sendemail/?seo=1" method="POST">
+                                        <form class="seo-score-form input-inline" action="https://teampresta.com/sendemail/?seo=1" method="POST">
                                             <div class="row">
                                                 <div class="col-lg-8 no-padding col-md-12 col-xs-12 col-sm-12">
                                                     <input class="input-dark site" required="required"
