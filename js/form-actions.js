@@ -39,7 +39,7 @@ $(function () {
             console.log(url);
 
         // Send the data using post
-        var posting = $.post(url, {'name': name, 'email': email, 'subject': subject, 'message': message, 'company': company, 'phone': phone, 'permalink': permalink})
+        //var posting = $.post(url, {'name': name, 'email': email, 'subject': subject, 'message': message, 'company': company, 'phone': phone, 'permalink': permalink})
 
         // Put the results in a div
         posting.done(function () {
