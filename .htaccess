@@ -14,16 +14,8 @@ RewriteRule ^(.*)\.html $1.php [L]
 ErrorDocument 401 /
 ErrorDocument 402 /
 ErrorDocument 403 /
-#ErrorDocument 404 /
+ErrorDocument 404 /
 ErrorDocument 500 /
 
-#RewriteCond %{HTTPS} off [OR]
-#RewriteCond %{HTTP_HOST} ^www\. [NC]
-#RewriteRule ^(.*)$ https://teampresta.com/$1 [L,R=301]
-
-#AddHandler application/x-httpd-php .html
-#AddHandler x-httpd-php .html
-
-#AddType application/x-httpd-php .php .htm .html
-
-#AddHandler application/x-httpd-php74 .php .php5 .html .htm
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
