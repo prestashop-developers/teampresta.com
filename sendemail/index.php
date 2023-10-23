@@ -1,5 +1,16 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
+    ///sendemail/?seo=1
+
+
+    exit;
+
+
+
+
+
     // Get the email address from the form
     $email = $_POST['email'];
 
