@@ -7,9 +7,9 @@
 <head>
     <title>TEAMPRESTA.COM - PrestaShop Laravel Wordpress themes - CMS ADDONS and PREMIUM SUPPORT</title>
     <meta charset="utf-8">
-    <meta name="description" content="Premium themes, EXCLUSIVE ADDONS and Web SUPPORT - Wordpress themes and addons">
+    <meta name="description" content="Premium themes, EXCLUSIVE ADDONS and Web SUPPORT - Prestashop Wordpress Laravel">
     <meta name="keywords"
-        content="wordpress themes, prestashop addons, wordpress plugins,wordpress responsive, theme builder, prestashop support, seo, prestashop custom,prestashop agency, prestashop email template; web hosting, prestashop vps, prestashop shared,prestashop premium themes, wordpress exclusive themes">
+        content="wordpress themes, prestashop addons, wordpress plugins, wordpress responsive, theme builder, prestashop support, seo, prestashop custom,prestashop agency, prestashop email template; web hosting, prestashop vps, prestashop shared,prestashop premium themes, wordpress exclusive themes">
     <meta name="author" content="TeamPresta">
     <meta rel="canonical" href="https://teampresta.com<?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
     <link rel="shortcut icon" href="https://www.prestashop.com/images/favicon.ico?v=2" />
