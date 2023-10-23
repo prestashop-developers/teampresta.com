@@ -1,3 +1,11 @@
+<?php 
+echo $php_info();
+
+?>
+
+
+
+
 <!DOCTYPE html>
 
 <head>
