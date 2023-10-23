@@ -2,6 +2,12 @@ RewriteEngine On
 #RewriteRule ^ - [R=200]
 #ErrorDocument 200 default
 
+RewriteRule ^(.+)\.php$ /$1.html [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+
 ErrorDocument 401 /
 ErrorDocument 402 /
 ErrorDocument 403 /
@@ -18,5 +24,3 @@ ErrorDocument 500 /
 #AddType application/x-httpd-php .php .htm .html
 
 #AddHandler application/x-httpd-php74 .php .php5 .html .htm
-
-RewriteRule ^(.+)\.php$ /$1.html [L]
