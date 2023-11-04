@@ -11,7 +11,7 @@
     <meta name="keywords"
         content="wordpress themes, prestashop addons, wordpress plugins, wordpress responsive, theme builder, prestashop support, seo, prestashop custom,prestashop agency, prestashop email template; web hosting, prestashop vps, prestashop shared,prestashop premium themes, wordpress exclusive themes, <?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
     <meta name="author" content="TeamPresta">
-    <meta rel="canonical" href="https://teampresta.com<?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
+    <meta rel="canonical" href="<?= htmlspecialchars($_SERVER['HTTP_HOST']) ?><?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
     <link rel="shortcut icon" href="https://www.prestashop.com/images/favicon.ico?v=2" />
     <meta name="msvalidate.01" content="E7265AF0DB2F209D64054FD000956E34" />
     <meta charset="UTF-8">
