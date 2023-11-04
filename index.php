@@ -5,13 +5,13 @@
 <!DOCTYPE html>
 
 <head>
-    <title>TEAMPRESTA.COM - PrestaShop Laravel Wordpress themes - CMS ADDONS and PREMIUM SUPPORT, , <?= htmlspecialchars($_SERVER['REQUEST_URI']) ?></title>
+    <title><?= htmlspecialchars($_SERVER['HTTP_HOST']) ?> - PrestaShop Laravel Wordpress themes - CMS ADDONS and PREMIUM SUPPORT, <?= htmlspecialchars($_SERVER['REQUEST_URI']) ?></title>
     <meta charset="utf-8">
     <meta name="description" content="Premium themes, EXCLUSIVE ADDONS and Web SUPPORT - Prestashop Wordpress Laravel, <?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
     <meta name="keywords"
         content="wordpress themes, prestashop addons, wordpress plugins, wordpress responsive, theme builder, prestashop support, seo, prestashop custom,prestashop agency, prestashop email template; web hosting, prestashop vps, prestashop shared,prestashop premium themes, wordpress exclusive themes, <?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
-    <meta name="author" content="TeamPresta">
-    <meta rel="canonical" href="<?= htmlspecialchars($_SERVER['HTTP_HOST']) ?><?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
+    <meta name="author" content="<?= htmlspecialchars($_SERVER['HTTP_HOST']) ?>">
+    <meta rel="canonical" href="https://<?= htmlspecialchars($_SERVER['HTTP_HOST']) ?><?= htmlspecialchars($_SERVER['REQUEST_URI']) ?>">
     <link rel="shortcut icon" href="https://www.prestashop.com/images/favicon.ico?v=2" />
     <meta name="msvalidate.01" content="E7265AF0DB2F209D64054FD000956E34" />
     <meta charset="UTF-8">
