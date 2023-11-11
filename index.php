@@ -34,7 +34,7 @@
 
                 <div class="logo">
                     <a href="/index.html" class="full-block-link">
-                        <img src="/img/logo-eye.png" alt="TeamPresta PrestaHero ">
+                        <img src="/img/logo-eye.png" alt="TeamPresta PrestaHero PrestaShop Themes Modules TemplateMonster">
                         <div class="logo-text"></div>
                     </a>
                 </div>
@@ -227,7 +227,7 @@
 
                 <div class="logo">
                     <a href="/index.html" class="full-block-link">
-                        <img src="/img/logo-eye.png" alt="TEAMPRESTA">
+                        <img src="/img/logo-eye.png" alt="TeamPresta PrestaHero PrestaShop Themes Modules TemplateMonster">
                         <div class="logo-text">
                             <div class="logo-title">PRESTASHOP THEMES</div>
                         </div>
